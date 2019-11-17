@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Almarai&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Lateef&display=swap');
+
+@font-face {
+    font-family: "DroidArabicNaskh";
+    src: url("../fonts/DroidArabicNaskh.eot");
+    src: url("../fonts/DroidArabicNaskh.eot?#iefix")
+        format("embedded-opentype"),
+        url("../fonts/DroidArabicNaskh.svg#DinNextMedium") format("svg"),
+        url("../fonts/DroidArabicNaskh.ttf") format("truetype"),
+        url("../fonts/DroidArabicNaskh.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DroidArabicNaskh";
+    src: url("../fonts/DroidArabicNaskh-Bold.eot");
+    src: url("../fonts/DroidArabicNaskh-Bold.eot?#iefix")
+        format("embedded-opentype"),
+        url("../fonts/DroidArabicNaskh-Bold.svg#DinNextMedium") format("svg"),
+        url("../fonts/DroidArabicNaskh-Bold.ttf") format("truetype"),
+        url("../fonts/DroidArabicNaskh-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+  
+
+.featured-products.owl-carousel .owl-nav button.owl-prev, .featured-products.owl-carousel .owl-nav button.owl-next,
+.home-slider.owl-carousel .owl-nav .owl-prev, .home-slider.owl-carousel .owl-nav .owl-next{
+    i{
+        display: inline-block;
+        transform: rotate(180deg);
+    }
+}
