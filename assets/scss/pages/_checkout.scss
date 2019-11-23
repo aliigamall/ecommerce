@@ -1,6 +1,6 @@
 // Checkout
 .checkout-progress-bar {
-  display: block;
+  display: flex;
   margin: 0 0 3rem;
   font-size: 0;
   line-height: 1.4;
@@ -8,6 +8,7 @@
 
   li {
     display: inline-block;
+    flex: 1;
     position: relative;
     width: 50%;
     margin: 0;
@@ -56,33 +57,27 @@
         width: 2.6rem;
         height: 2.6rem;
         margin-left: -1.3rem;
-        background: #fff;
         color: #777;
         font-weight: 600;
         content: counter(i);
         counter-increment: i;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
 
     &.active {
-      &::before,
+      
       > span::before {
         background-color: #ff5501;
       }
 
       > span {
         color: #000;
-      }
-
-      > span::after {
-        font-family: 'porto';
-        content: '\e84e';
-      }
-    }
-
-    &:first-child {
-      &::before {
-        border-radius: .6rem 0 0 .6rem;
+        &:after{
+          color: #fff;
+        }
       }
     }
 
@@ -418,11 +413,8 @@
 @include mq('sm') {
   .checkout-progress-bar {
     li {
-      width: 185px;
+      // width: 185px;
 
-      > span {
-        font-size: 1.8rem;
-      }
     }
   }
 
@@ -435,4 +427,12 @@
   .shipping-address-box {
     width: 33.33%;
   }
+}
+
+.table.table-cart tr.product-action-row td.card__footer{
+  background-color: transparent;
+}
+.cart__footer-flex{
+  display: flex;
+  justify-content: space-between;
 }

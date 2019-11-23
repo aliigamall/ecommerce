@@ -2,6 +2,10 @@
 .info-boxes-container {
   margin-top: 2.7rem;
   background-color: $primary-color;
+  display: none;
+  @include mq('lg'){
+    display: block;
+  }
 
   .container,
   .container-fluid {

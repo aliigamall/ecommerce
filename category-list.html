@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
 
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
-    <link rel="stylesheet" href="assets/css/nouislider.css">
     <link rel="stylesheet" href="assets/css/style.ar.css">
     <style>
         .product-single-gallery {
@@ -651,7 +649,7 @@
 
         <main class="main">
             <div class="banner banner-cat">
-                <img src="assets/images/banners/Apple-iPhone-XR.jpg" alt="">
+                    <img src="assets/images/banners/Apple-iPhone-XR.jpg" alt="">
                 <!-- <div class="banner-content container">
                     <h2 class="banner-subtitle">تحقق من أكثر <span>٢٠٠</span> منتج</h2>
                     <h1 class="banner-title">
@@ -675,124 +673,269 @@
                 <div class="row">
                     <div class="col-lg-10">
                         <nav class="toolbox">
-                            <div class="toolbox__tags">
-                                <div class="tag">
-                                    <span>سامسونج</span>
-                                    <button class="tag__close">
-                                        x
-                                    </button>
-                                </div>
-                                <div class="tag">
-                                    <span>سامسونج</span>
-                                    <button class="tag__close">
-                                        x
-                                    </button>
-                                </div>
-                                <div class="tag">
-                                    <span>سامسونج</span>
-                                    <button class="tag__close">
-                                        x
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="toolbox-item toolbox-show">
-                                <div class="toolbox-item__item toolbox-item__filter">
-                                    <button id="filterBtn" class="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-                                    </button>
-                                    تصنيف 
-                                </div>
-                                <div class="toolbox-left toolbox-item__item">
-                                    <div class="toolbox-item toolbox-sort">
-                                        <div class="select-custom">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-                                            <select name="orderby" class="form-control">
-                                                <option value="menu_order" selected="selected">ترتيب </option>
-                                                <option value="popularity">الأكثر تطابقا</option>
-                                                <option value="rating">الأعلي تقييما</option>
-                                                <option value="date">سعر: من الاقل للاعلي</option>
-                                                <option value="price">سعر: من الاعلي للاقل</option>
-                                            </select>
-                                        </div><!-- End .select-custom -->
-    
-    
-                                    </div><!-- End .toolbox-item -->
-                                </div><!-- End .toolbox-left -->
-                                
+                            <div class="toolbox-left">
+                                <div class="toolbox-item toolbox-sort">
+                                    <div class="select-custom">
+                                        <select name="orderby" class="form-control">
+                                            <option value="menu_order" selected="selected">الأكثر شويعا</option>
+                                            <option value="popularity">الأكثر تطابقا</option>
+                                            <option value="rating">الأعلي تقييما</option>
+                                            <option value="date">سعر: من الاقل للاعلي</option>
+                                            <option value="price">سعر: من الاعلي للاقل</option>
+                                        </select>
+                                    </div><!-- End .select-custom -->
 
-                                <div class="layout-modes toolbox-item__item">
-                                    <a href="#" class="layout-btn btn-grid active" data-view="grid" title="Grid">
-                                        <i class="icon-mode-grid"></i>
-                                    </a>
-                                    <a href="#" class="layout-btn btn-list" data-view="list" title="List">
-                                        <i class="icon-mode-list"></i>
-                                    </a>
-                                </div><!-- End .layout-modes -->
+
+                                </div><!-- End .toolbox-item -->
+                            </div><!-- End .toolbox-left -->
+
+                            <div class="toolbox-item toolbox-show">
+                                <label>عرض ١-١٢ من ٦٠ نتيجه</label>
                             </div><!-- End .toolbox-item -->
+
+                            <div class="layout-modes">
+                                <a href="category.html" class="layout-btn btn-grid " title="Grid">
+                                    <i class="icon-mode-grid"></i>
+                                </a>
+                                <a href="category-list.html" class="layout-btn btn-list active" title="List">
+                                    <i class="icon-mode-list"></i>
+                                </a>
+                            </div><!-- End .layout-modes -->
                         </nav>
-                      <div class="products-category">
-                          <div class="product-grid">
-                              <div class="product ">
-                                  <figure class="product-image-container">
-                                      <a href="product.html" class="product-image">
-                                          <span class="product-label label-sale">-20%</span>
-                                          <span class="product-label label-hot">جديد</span>
-                                          <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                              alt="product">
-                                      </a>
-                                      <div class="product__quick-actions">
-                                          <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                          <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                              <span>أضف للعربه</span>
-                                          </a>
-                                      </div>
-                                  </figure>
-                                  <div class="product-list-details">
+                        <div class="row">
+                            <div class="product product-list-wrapper">
+                                <figure class="product-image-container">
+                                    <a href="product.html" class="product-image">
+                                        <span class="product-label label-sale">-20%</span>
+                                        <span class="product-label label-hot">جديد</span>
+                                        <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                            alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                    <div class="product-action">
+                                        <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                            <span>أضف للمفضله</span>
+                                        </a>
+
+                                        <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                            <span>أضف للعربه</span>
+                                        </a>
+
+                                        <a href="#" class="paction add-compare" title="قارن المنتج">
+                                            <span>قارن المنتج</span>
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+
                                     <h2 class="product-title">
                                         <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                         </a>
                                     </h2>
-                                    <p>
-                                        يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                    </p>
-                                      <ul>
-                                            <li> سعة التخزين: 8 جيجابايت</li>
-                                            <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                            <li> نظام التشغيل: اندرويد</li>
-                                            <li> حجم الذاكرة: 1 جيجابايت</li>
-                                      </ul>
-                                  </div>
-                                  <div class="product-details">
-                                      <div class="ratings-container">
-                                          <a href="#" class="paction" title="أضف للمفضله">
-                                              <i class="icon-heart"></i>
-                                          </a>
-                                          <div class="ratingControl"></div>
-                                          <a href="#" class="paction" title="قارن المنتج">
-                                              <i class="icon-chart"></i>
-                                          </a>
-                                      </div><!-- End .product-container -->
-                                      <h2 class="product-title">
-                                          <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                          </a>
-                                      </h2>
-                                      <div class="price-box">
-                                          <span class="product-price">2000 <label for="">جنيه</label></span>
-                                      </div>
-                                      <div class="price-box price-box--installment">
-                                          <span class="product-price--installment">تقسيط</span>
-                                          <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                      </div>
-                                      
-                                      <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
-                                      <!-- End .price-box -->
-      
-                                      <!-- End .product-action -->
-                                  </div><!-- End .product-details -->
-                              </div><!-- End .product -->
-                          </div>
-                          <div class="product-grid">
-                                <div class="product ">
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="product-desc">
+                                        <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                            بتصميم
+                                            رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                            سريع
+                                            وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                            تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                            على
+                                            <a href="prorduct.html">المزيد</a>
+                                        </p>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="product-price">2000 <label for="">جنيه</label></span>
+                                    </div>
+                                    <div class="price-box price-box--installment">
+                                        <span class="product-price--installment">تقسيط</span>
+                                        <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                    </div>
+
+                                    <!-- End .price-box -->
+
+                                    <!-- End .product-action -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                            <div class="product product-list-wrapper">
+                                <figure class="product-image-container">
+                                    <a href="product.html" class="product-image">
+                                        <span class="product-label label-sale">-20%</span>
+                                        <span class="product-label label-hot">جديد</span>
+                                        <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1539249744/N18876716A_1.jpg"
+                                            alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                    <div class="product-action">
+                                        <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                            <span>أضف للمفضله</span>
+                                        </a>
+
+                                        <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                            <span>أضف للعربه</span>
+                                        </a>
+
+                                        <a href="#" class="paction add-compare" title="قارن المنتج">
+                                            <span>قارن المنتج</span>
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+
+                                    <h2 class="product-title">
+                                        <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                        </a>
+                                    </h2>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="product-desc">
+                                        <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                            بتصميم
+                                            رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                            سريع
+                                            وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                            تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                            على
+                                            <a href="prorduct.html">المزيد</a>
+                                        </p>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="product-price">2000 <label for="">جنيه</label></span>
+                                    </div>
+                                    <div class="price-box price-box--installment">
+                                        <span class="product-price--installment">تقسيط</span>
+                                        <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                    </div>
+
+                                    <!-- End .price-box -->
+
+                                    <!-- End .product-action -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                            <div class="product product-list-wrapper">
+                                <figure class="product-image-container">
+                                    <a href="product.html" class="product-image">
+                                        <span class="product-label label-sale">-20%</span>
+                                        <span class="product-label label-hot">جديد</span>
+                                        <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1558613692/N22837830A_1.jpg"
+                                            alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                    <div class="product-action">
+                                        <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                            <span>أضف للمفضله</span>
+                                        </a>
+
+                                        <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                            <span>أضف للعربه</span>
+                                        </a>
+
+                                        <a href="#" class="paction add-compare" title="قارن المنتج">
+                                            <span>قارن المنتج</span>
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+
+                                    <h2 class="product-title">
+                                        <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                        </a>
+                                    </h2>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="product-desc">
+                                        <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                            بتصميم
+                                            رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                            سريع
+                                            وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                            تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                            على
+                                            <a href="prorduct.html">المزيد</a>
+                                        </p>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="product-price">2000 <label for="">جنيه</label></span>
+                                    </div>
+                                    <div class="price-box price-box--installment">
+                                        <span class="product-price--installment">تقسيط</span>
+                                        <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                    </div>
+
+                                    <!-- End .price-box -->
+
+                                    <!-- End .product-action -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                            <div class="product product-list-wrapper">
+                                <figure class="product-image-container">
+                                    <a href="product.html" class="product-image">
+                                        <span class="product-label label-sale">-20%</span>
+                                        <span class="product-label label-hot">جديد</span>
+                                        <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1528464113/N14633418A_1.jpg"
+                                            alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                    <div class="product-action">
+                                        <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                            <span>أضف للمفضله</span>
+                                        </a>
+
+                                        <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                            <span>أضف للعربه</span>
+                                        </a>
+
+                                        <a href="#" class="paction add-compare" title="قارن المنتج">
+                                            <span>قارن المنتج</span>
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+
+                                    <h2 class="product-title">
+                                        <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                        </a>
+                                    </h2>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="product-desc">
+                                        <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                            بتصميم
+                                            رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                            سريع
+                                            وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                            تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                            على
+                                            <a href="prorduct.html">المزيد</a>
+                                        </p>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="product-price">2000 <label for="">جنيه</label></span>
+                                    </div>
+                                    <div class="price-box price-box--installment">
+                                        <span class="product-price--installment">تقسيط</span>
+                                        <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                    </div>
+
+                                    <!-- End .price-box -->
+
+                                    <!-- End .product-action -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                            <div class="product product-list-wrapper">
                                     <figure class="product-image-container">
                                         <a href="product.html" class="product-image">
                                             <span class="product-label label-sale">-20%</span>
@@ -800,42 +943,43 @@
                                             <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
                                                 alt="product">
                                         </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                        <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                        <div class="product-action">
+                                            <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                                <span>أضف للمفضله</span>
+                                            </a>
+    
+                                            <a href="product.html" class="paction add-cart" title="أضف للعربه">
                                                 <span>أضف للعربه</span>
+                                            </a>
+    
+                                            <a href="#" class="paction add-compare" title="قارن المنتج">
+                                                <span>قارن المنتج</span>
                                             </a>
                                         </div>
                                     </figure>
-                                    <div class="product-list-details">
-                                      <h2 class="product-title">
-                                          <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                          </a>
-                                      </h2>
-                                      <p>
-                                          يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                      </p>
-                                        <ul>
-                                              <li> سعة التخزين: 8 جيجابايت</li>
-                                              <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                              <li> نظام التشغيل: اندرويد</li>
-                                              <li> حجم الذاكرة: 1 جيجابايت</li>
-                                        </ul>
-                                    </div>
                                     <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
+    
                                         <h2 class="product-title">
                                             <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                             </a>
                                         </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                            </div><!-- End .product-ratings -->
+                                        </div><!-- End .product-container -->
+                                        <div class="product-desc">
+                                            <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                                بتصميم
+                                                رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                                سريع
+                                                وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                                تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                                على
+                                                <a href="prorduct.html">المزيد</a>
+                                            </p>
+                                        </div>
                                         <div class="price-box">
                                             <span class="product-price">2000 <label for="">جنيه</label></span>
                                         </div>
@@ -843,255 +987,420 @@
                                             <span class="product-price--installment">تقسيط</span>
                                             <span class="product-price">40.00 <label for="">جنيه</label></span>
                                         </div>
-                                        
-                                        <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
+    
                                         <!-- End .price-box -->
-        
+    
                                         <!-- End .product-action -->
                                     </div><!-- End .product-details -->
                                 </div><!-- End .product -->
-                            </div>
-                            <div class="product-grid">
-                                    <div class="product ">
-                                        <figure class="product-image-container">
-                                            <a href="product.html" class="product-image">
-                                                <span class="product-label label-sale">-20%</span>
-                                                <span class="product-label label-hot">جديد</span>
-                                                <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                    alt="product">
+                                <div class="product product-list-wrapper">
+                                    <figure class="product-image-container">
+                                        <a href="product.html" class="product-image">
+                                            <span class="product-label label-sale">-20%</span>
+                                            <span class="product-label label-hot">جديد</span>
+                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1539249744/N18876716A_1.jpg"
+                                                alt="product">
+                                        </a>
+                                        <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                        <div class="product-action">
+                                            <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                                <span>أضف للمفضله</span>
                                             </a>
-                                            <div class="product__quick-actions">
-                                                <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                                <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                    <span>أضف للعربه</span>
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-list-details">
-                                          <h2 class="product-title">
-                                              <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                              </a>
-                                          </h2>
-                                          <p>
-                                              يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                          </p>
-                                            <ul>
-                                                  <li> سعة التخزين: 8 جيجابايت</li>
-                                                  <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                                  <li> نظام التشغيل: اندرويد</li>
-                                                  <li> حجم الذاكرة: 1 جيجابايت</li>
-                                            </ul>
+    
+                                            <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                                <span>أضف للعربه</span>
+                                            </a>
+    
+                                            <a href="#" class="paction add-compare" title="قارن المنتج">
+                                                <span>قارن المنتج</span>
+                                            </a>
                                         </div>
-                                        <div class="product-details">
-                                            <div class="ratings-container">
-                                                <a href="#" class="paction" title="أضف للمفضله">
-                                                    <i class="icon-heart"></i>
-                                                </a>
-                                                <div class="ratingControl"></div>
-                                                <a href="#" class="paction" title="قارن المنتج">
-                                                    <i class="icon-chart"></i>
-                                                </a>
-                                            </div><!-- End .product-container -->
-                                            <h2 class="product-title">
-                                                <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                                </a>
-                                            </h2>
-                                            <div class="price-box">
-                                                <span class="product-price">2000 <label for="">جنيه</label></span>
-                                            </div>
-                                            <div class="price-box price-box--installment">
-                                                <span class="product-price--installment">تقسيط</span>
-                                                <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                            </div>
-                                            
-                                            <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
-                                            <!-- End .price-box -->
-            
-                                            <!-- End .product-action -->
-                                        </div><!-- End .product-details -->
-                                    </div><!-- End .product -->
-                                </div>
-                                <div class="product-grid">
-                                        <div class="product ">
-                                            <figure class="product-image-container">
-                                                <a href="product.html" class="product-image">
-                                                    <span class="product-label label-sale">-20%</span>
-                                                    <span class="product-label label-hot">جديد</span>
-                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                        alt="product">
-                                                </a>
-                                                <div class="product__quick-actions">
-                                                    <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                        <span>أضف للعربه</span>
-                                                    </a>
-                                                </div>
-                                            </figure>
-                                            <div class="product-list-details">
-                                              <h2 class="product-title">
-                                                  <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                                  </a>
-                                              </h2>
-                                              <p>
-                                                  يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                              </p>
-                                                <ul>
-                                                      <li> سعة التخزين: 8 جيجابايت</li>
-                                                      <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                                      <li> نظام التشغيل: اندرويد</li>
-                                                      <li> حجم الذاكرة: 1 جيجابايت</li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-details">
-                                                <div class="ratings-container">
-                                                    <a href="#" class="paction" title="أضف للمفضله">
-                                                        <i class="icon-heart"></i>
-                                                    </a>
-                                                    <div class="ratingControl"></div>
-                                                    <a href="#" class="paction" title="قارن المنتج">
-                                                        <i class="icon-chart"></i>
-                                                    </a>
-                                                </div><!-- End .product-container -->
-                                                <h2 class="product-title">
-                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                                    </a>
-                                                </h2>
-                                                <div class="price-box">
-                                                    <span class="product-price">2000 <label for="">جنيه</label></span>
-                                                </div>
-                                                <div class="price-box price-box--installment">
-                                                    <span class="product-price--installment">تقسيط</span>
-                                                    <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                                </div>
-                                                
-                                                <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
-                                                <!-- End .price-box -->
-                
-                                                <!-- End .product-action -->
-                                            </div><!-- End .product-details -->
-                                        </div><!-- End .product -->
+                                    </figure>
+                                    <div class="product-details">
+    
+                                        <h2 class="product-title">
+                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                            </a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                            </div><!-- End .product-ratings -->
+                                        </div><!-- End .product-container -->
+                                        <div class="product-desc">
+                                            <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                                بتصميم
+                                                رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                                سريع
+                                                وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                                تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                                على
+                                                <a href="prorduct.html">المزيد</a>
+                                            </p>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                        </div>
+                                        <div class="price-box price-box--installment">
+                                            <span class="product-price--installment">تقسيط</span>
+                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                        </div>
+    
+                                        <!-- End .price-box -->
+    
+                                        <!-- End .product-action -->
+                                    </div><!-- End .product-details -->
+                                </div><!-- End .product -->
+                                <div class="product product-list-wrapper">
+                                    <figure class="product-image-container">
+                                        <a href="product.html" class="product-image">
+                                            <span class="product-label label-sale">-20%</span>
+                                            <span class="product-label label-hot">جديد</span>
+                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1558613692/N22837830A_1.jpg"
+                                                alt="product">
+                                        </a>
+                                        <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                        <div class="product-action">
+                                            <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                                <span>أضف للمفضله</span>
+                                            </a>
+    
+                                            <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                                <span>أضف للعربه</span>
+                                            </a>
+    
+                                            <a href="#" class="paction add-compare" title="قارن المنتج">
+                                                <span>قارن المنتج</span>
+                                            </a>
+                                        </div>
+                                    </figure>
+                                    <div class="product-details">
+    
+                                        <h2 class="product-title">
+                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                            </a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                            </div><!-- End .product-ratings -->
+                                        </div><!-- End .product-container -->
+                                        <div class="product-desc">
+                                            <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                                بتصميم
+                                                رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                                سريع
+                                                وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                                تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                                على
+                                                <a href="prorduct.html">المزيد</a>
+                                            </p>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                        </div>
+                                        <div class="price-box price-box--installment">
+                                            <span class="product-price--installment">تقسيط</span>
+                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                        </div>
+    
+                                        <!-- End .price-box -->
+    
+                                        <!-- End .product-action -->
+                                    </div><!-- End .product-details -->
+                                </div><!-- End .product -->
+                                <div class="product product-list-wrapper">
+                                    <figure class="product-image-container">
+                                        <a href="product.html" class="product-image">
+                                            <span class="product-label label-sale">-20%</span>
+                                            <span class="product-label label-hot">جديد</span>
+                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1528464113/N14633418A_1.jpg"
+                                                alt="product">
+                                        </a>
+                                        <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                        <div class="product-action">
+                                            <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                                <span>أضف للمفضله</span>
+                                            </a>
+    
+                                            <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                                <span>أضف للعربه</span>
+                                            </a>
+    
+                                            <a href="#" class="paction add-compare" title="قارن المنتج">
+                                                <span>قارن المنتج</span>
+                                            </a>
+                                        </div>
+                                    </figure>
+                                    <div class="product-details">
+    
+                                        <h2 class="product-title">
+                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                            </a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                            </div><!-- End .product-ratings -->
+                                        </div><!-- End .product-container -->
+                                        <div class="product-desc">
+                                            <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                                بتصميم
+                                                رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                                سريع
+                                                وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                                تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                                على
+                                                <a href="prorduct.html">المزيد</a>
+                                            </p>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                        </div>
+                                        <div class="price-box price-box--installment">
+                                            <span class="product-price--installment">تقسيط</span>
+                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                        </div>
+    
+                                        <!-- End .price-box -->
+    
+                                        <!-- End .product-action -->
+                                    </div><!-- End .product-details -->
+                                </div><!-- End .product -->
+                                <div class="product product-list-wrapper">
+                                <figure class="product-image-container">
+                                    <a href="product.html" class="product-image">
+                                        <span class="product-label label-sale">-20%</span>
+                                        <span class="product-label label-hot">جديد</span>
+                                        <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                            alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                    <div class="product-action">
+                                        <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                            <span>أضف للمفضله</span>
+                                        </a>
+
+                                        <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                            <span>أضف للعربه</span>
+                                        </a>
+
+                                        <a href="#" class="paction add-compare" title="قارن المنتج">
+                                            <span>قارن المنتج</span>
+                                        </a>
                                     </div>
-                                    <div class="product-grid">
-                                            <div class="product ">
-                                                <figure class="product-image-container">
-                                                    <a href="product.html" class="product-image">
-                                                        <span class="product-label label-sale">-20%</span>
-                                                        <span class="product-label label-hot">جديد</span>
-                                                        <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                            alt="product">
-                                                    </a>
-                                                    <div class="product__quick-actions">
-                                                        <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                                        <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                            <span>أضف للعربه</span>
-                                                        </a>
-                                                    </div>
-                                                </figure>
-                                                <div class="product-list-details">
-                                                  <h2 class="product-title">
-                                                      <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                                      </a>
-                                                  </h2>
-                                                  <p>
-                                                      يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                                  </p>
-                                                    <ul>
-                                                          <li> سعة التخزين: 8 جيجابايت</li>
-                                                          <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                                          <li> نظام التشغيل: اندرويد</li>
-                                                          <li> حجم الذاكرة: 1 جيجابايت</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="product-details">
-                                                    <div class="ratings-container">
-                                                        <a href="#" class="paction" title="أضف للمفضله">
-                                                            <i class="icon-heart"></i>
-                                                        </a>
-                                                        <div class="ratingControl"></div>
-                                                        <a href="#" class="paction" title="قارن المنتج">
-                                                            <i class="icon-chart"></i>
-                                                        </a>
-                                                    </div><!-- End .product-container -->
-                                                    <h2 class="product-title">
-                                                        <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                                        </a>
-                                                    </h2>
-                                                    <div class="price-box">
-                                                        <span class="product-price">2000 <label for="">جنيه</label></span>
-                                                    </div>
-                                                    <div class="price-box price-box--installment">
-                                                        <span class="product-price--installment">تقسيط</span>
-                                                        <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                                    </div>
-                                                    
-                                                    <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
-                                                    <!-- End .price-box -->
-                    
-                                                    <!-- End .product-action -->
-                                                </div><!-- End .product-details -->
-                                            </div><!-- End .product -->
-                                        </div>
-                                        <div class="product-grid">
-                                                <div class="product ">
-                                                    <figure class="product-image-container">
-                                                        <a href="product.html" class="product-image">
-                                                            <span class="product-label label-sale">-20%</span>
-                                                            <span class="product-label label-hot">جديد</span>
-                                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                                alt="product">
-                                                        </a>
-                                                        <div class="product__quick-actions">
-                                                            <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                                <span>أضف للعربه</span>
-                                                            </a>
-                                                        </div>
-                                                    </figure>
-                                                    <div class="product-list-details">
-                                                      <h2 class="product-title">
-                                                          <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                                          </a>
-                                                      </h2>
-                                                      <p>
-                                                          يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                                      </p>
-                                                        <ul>
-                                                              <li> سعة التخزين: 8 جيجابايت</li>
-                                                              <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                                              <li> نظام التشغيل: اندرويد</li>
-                                                              <li> حجم الذاكرة: 1 جيجابايت</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="product-details">
-                                                        <div class="ratings-container">
-                                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                                <i class="icon-heart"></i>
-                                                            </a>
-                                                            <div class="ratingControl"></div>
-                                                            <a href="#" class="paction" title="قارن المنتج">
-                                                                <i class="icon-chart"></i>
-                                                            </a>
-                                                        </div><!-- End .product-container -->
-                                                        <h2 class="product-title">
-                                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                                            </a>
-                                                        </h2>
-                                                        <div class="price-box">
-                                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                                        </div>
-                                                        <div class="price-box price-box--installment">
-                                                            <span class="product-price--installment">تقسيط</span>
-                                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                                        </div>
-                                                        
-                                                        <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
-                                                        <!-- End .price-box -->
-                        
-                                                        <!-- End .product-action -->
-                                                    </div><!-- End .product-details -->
-                                                </div><!-- End .product -->
-                                            </div>
-                      </div>
+                                </figure>
+                                <div class="product-details">
+
+                                    <h2 class="product-title">
+                                        <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                        </a>
+                                    </h2>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="product-desc">
+                                        <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                            بتصميم
+                                            رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                            سريع
+                                            وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                            تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                            على
+                                            <a href="prorduct.html">المزيد</a>
+                                        </p>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="product-price">2000 <label for="">جنيه</label></span>
+                                    </div>
+                                    <div class="price-box price-box--installment">
+                                        <span class="product-price--installment">تقسيط</span>
+                                        <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                    </div>
+
+                                    <!-- End .price-box -->
+
+                                    <!-- End .product-action -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                            <div class="product product-list-wrapper">
+                                <figure class="product-image-container">
+                                    <a href="product.html" class="product-image">
+                                        <span class="product-label label-sale">-20%</span>
+                                        <span class="product-label label-hot">جديد</span>
+                                        <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1539249744/N18876716A_1.jpg"
+                                            alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                    <div class="product-action">
+                                        <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                            <span>أضف للمفضله</span>
+                                        </a>
+
+                                        <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                            <span>أضف للعربه</span>
+                                        </a>
+
+                                        <a href="#" class="paction add-compare" title="قارن المنتج">
+                                            <span>قارن المنتج</span>
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+
+                                    <h2 class="product-title">
+                                        <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                        </a>
+                                    </h2>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="product-desc">
+                                        <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                            بتصميم
+                                            رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                            سريع
+                                            وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                            تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                            على
+                                            <a href="prorduct.html">المزيد</a>
+                                        </p>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="product-price">2000 <label for="">جنيه</label></span>
+                                    </div>
+                                    <div class="price-box price-box--installment">
+                                        <span class="product-price--installment">تقسيط</span>
+                                        <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                    </div>
+
+                                    <!-- End .price-box -->
+
+                                    <!-- End .product-action -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                            <div class="product product-list-wrapper">
+                                <figure class="product-image-container">
+                                    <a href="product.html" class="product-image">
+                                        <span class="product-label label-sale">-20%</span>
+                                        <span class="product-label label-hot">جديد</span>
+                                        <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1558613692/N22837830A_1.jpg"
+                                            alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                    <div class="product-action">
+                                        <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                            <span>أضف للمفضله</span>
+                                        </a>
+
+                                        <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                            <span>أضف للعربه</span>
+                                        </a>
+
+                                        <a href="#" class="paction add-compare" title="قارن المنتج">
+                                            <span>قارن المنتج</span>
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+
+                                    <h2 class="product-title">
+                                        <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                        </a>
+                                    </h2>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="product-desc">
+                                        <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                            بتصميم
+                                            رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                            سريع
+                                            وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                            تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                            على
+                                            <a href="prorduct.html">المزيد</a>
+                                        </p>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="product-price">2000 <label for="">جنيه</label></span>
+                                    </div>
+                                    <div class="price-box price-box--installment">
+                                        <span class="product-price--installment">تقسيط</span>
+                                        <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                    </div>
+
+                                    <!-- End .price-box -->
+
+                                    <!-- End .product-action -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                            <div class="product product-list-wrapper">
+                                <figure class="product-image-container">
+                                    <a href="product.html" class="product-image">
+                                        <span class="product-label label-sale">-20%</span>
+                                        <span class="product-label label-hot">جديد</span>
+                                        <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1528464113/N14633418A_1.jpg"
+                                            alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">عرض سريع</a>
+                                    <div class="product-action">
+                                        <a href="#" class="paction add-wishlist" title="أضف للمفضله">
+                                            <span>أضف للمفضله</span>
+                                        </a>
+
+                                        <a href="product.html" class="paction add-cart" title="أضف للعربه">
+                                            <span>أضف للعربه</span>
+                                        </a>
+
+                                        <a href="#" class="paction add-compare" title="قارن المنتج">
+                                            <span>قارن المنتج</span>
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+
+                                    <h2 class="product-title">
+                                        <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                        </a>
+                                    </h2>
+                                    <div class="ratings-container">
+                                        <div class="product-ratings">
+                                            <span class="ratings" style="width:80%"></span><!-- End .ratings -->
+                                        </div><!-- End .product-ratings -->
+                                    </div><!-- End .product-container -->
+                                    <div class="product-desc">
+                                        <p>استمتع على الدوام حتى أثناء تنقلك مع لينوفو تاب E7 تابلت. تابلت
+                                            بتصميم
+                                            رائع مع زوايا دائرية ولون أسود أنيق. يتميز بنظام تشغيل أندرويد جو
+                                            سريع
+                                            وآمن والذي سيوفر تجربة مستخدم ممتازة. باستخدام الإصدارات المتقدمة من
+                                            تطبيقات جوجل المعروفة؛ يمكنك إرسال رسائل البريد الإلكتروني والعثور
+                                            على
+                                            <a href="prorduct.html">المزيد</a>
+                                        </p>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="product-price">2000 <label for="">جنيه</label></span>
+                                    </div>
+                                    <div class="price-box price-box--installment">
+                                        <span class="product-price--installment">تقسيط</span>
+                                        <span class="product-price">40.00 <label for="">جنيه</label></span>
+                                    </div>
+
+                                    <!-- End .price-box -->
+
+                                    <!-- End .product-action -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                        </div>
+
 
                         <nav class="toolbox toolbox-pagination">
                             <div class="toolbox-item toolbox-show">
@@ -1126,80 +1435,6 @@
                                 </h3>
 
                                 <div class="collapse show" id="widget-body-1">
-                                    <div class="widget-body widget-body--search">
-                                        <input type="text" class="form-control" placeholder="أدخل العلامه التجاريه هنا">
-                                        <ul class="cat-list">
-                                            <li>
-                                                <div class="mdc-checkbox">
-                                                    <input id="cb_1" type="checkbox">
-                                                    <label for="cb_1">أبل</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mdc-checkbox">
-                                                    <input id="cb_2" type="checkbox">
-                                                    <label for="cb_2">سامسونج</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mdc-checkbox">
-                                                    <input id="cb_3" type="checkbox">
-                                                    <label for="cb_3">هواوي</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mdc-checkbox">
-                                                    <input id="cb_4" type="checkbox">
-                                                    <label for="cb_4">شاومي</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mdc-checkbox">
-                                                    <input id="cb_5" type="checkbox">
-                                                    <label for="cb_5">وان بلس</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mdc-checkbox">
-                                                    <input id="cb_6" type="checkbox">
-                                                    <label for="cb_6">سامسونج</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mdc-checkbox">
-                                                    <input id="cb_7" type="checkbox">
-                                                    <label for="cb_7">هواوي</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mdc-checkbox">
-                                                    <input id="cb_8" type="checkbox">
-                                                    <label for="cb_8">أبل</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mdc-checkbox">
-                                                    <input id="cb_9" type="checkbox">
-                                                    <label for="cb_9">اوبو</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="mdc-checkbox">
-                                                    <input id="cb_10" type="checkbox">
-                                                    <label for="cb_10">شاومي</label>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div><!-- End .widget-body -->
-                                </div><!-- End .collapse -->
-                            </div><!-- End .widget -->
-                            <div class="widget">
-                                <h3 class="widget-title">
-                                    <a data-toggle="collapse" href="#widget-body-11" role="button" aria-expanded="true"
-                                        aria-controls="widget-body-11">العلامه التجاريه</a>
-                                </h3>
-
-                                <div class="collapse show" id="widget-body-11">
                                     <div class="widget-body">
                                         <ul class="cat-list">
                                             <li>
@@ -1238,6 +1473,7 @@
                                     </div><!-- End .widget-body -->
                                 </div><!-- End .collapse -->
                             </div><!-- End .widget -->
+
                             <div class="widget">
                                 <h3 class="widget-title">
                                     <a data-toggle="collapse" href="#widget-body-2" role="button" aria-expanded="true"
@@ -1246,17 +1482,20 @@
 
                                 <div class="collapse show" id="widget-body-2">
                                     <div class="widget-body">
-                                        <form action="#" dir="ltr">
-                                            <div class="price-slider-wrapper">
-                                                <div id="price-slider"></div><!-- End #price-slider -->
-                                            </div><!-- End .price-slider-wrapper -->
-
-                                            <div class="filter-price-action">
-                                                <div class="filter-price-text">
-                                                    <span id="filter-price-range"></span>
-                                                </div><!-- End .filter-price-text -->
-                                            </div><!-- End .filter-price-action -->
-                                        </form>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label for="">من</label>
+                                                    <input type="text" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label for="">إلي</label>
+                                                    <input type="text" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div><!-- End .widget-body -->
                                 </div><!-- End .collapse -->
                             </div><!-- End .widget -->
@@ -1366,10 +1605,6 @@
                             </div><!-- End .widget -->
 
                         </div><!-- End .sidebar-wrapper -->
-                        <div class="sidebar-actions">
-                            <button class="btn btn-sm btn-primary">تصنيف</button>
-                            <button id="closeFilterBtn" class="btn btn-sm btn-light">إغلاق</button>
-                        </div>
                     </aside><!-- End .col-lg-3 -->
                 </div><!-- End .row -->
             </div><!-- End .container -->
@@ -1720,7 +1955,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/nouislider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
 </body>

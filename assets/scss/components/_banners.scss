@@ -10,13 +10,15 @@
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    height: 220px;
     margin-bottom: 0;
     background-color: #ccc;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-color: #000;
+    @include mq('md'){
+      height: 220px;
+    }
     img{
       height: 100%;
       object-fit: contain;

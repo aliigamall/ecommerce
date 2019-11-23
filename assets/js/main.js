@@ -57,9 +57,9 @@
       }
 
       /* Call if not mobile and plugin is included */
-      if ($.fn.themeSticky) {
-        this.stickySidebar();
-      }
+      // if ($.fn.themeSticky) {
+      //   this.stickySidebar();
+      // }
 
       /* Call function if Light Gallery plugin is included */
       if ($.fn.magnificPopup) {
@@ -363,7 +363,9 @@
                   zoomType: 'inner',
                   cursor: 'grab'
                 };
-              $this.elevateZoom(zoomConfig);
+                if($(window).width() >= 1280){
+                  $this.elevateZoom(zoomConfig);
+                }
             });
           }
         },
@@ -766,12 +768,33 @@
     Porto.init();
     if($(".product-list").length > 0){
       var swiper = new Swiper('.product-list', {
-        slidesPerView: 5,
+        slidesPerView: 1,
         spaceBetween: 10,
         navigation: {
           nextEl: '.product-list .swiper-button-next',
           prevEl: '.product-list .swiper-button-prev',
         },
+        pagination: {
+          el: '.product-list .swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 3,
+          },
+          // when window width is >= 640px
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1280: {
+            slidesPerView: 5,
+          }
+        }
       });
     }
     if($(".main-slider").length > 0){
@@ -812,8 +835,26 @@
         if($(this).attr('data-view') == 'list')
         $('.products-category').addClass('is-list');
       })
-  });
 
+      
+    });
+    
+    $('#filterBtn').on('click', function showFilter(){
+      $('.sidebar-shop').addClass('is-show');
+    }); 
+    $('#closeFilterBtn').on('click', function showFilter(){
+      $('.sidebar-shop').removeClass('is-show');
+    }); 
+
+    $("#btnShowPrice").on('click', function(e){
+      e.preventDefault();
+      $(".mobile-sidebar").addClass("is-shown");
+    });
+    $("#btnCloseFilter").on('click', function(e){
+      e.preventDefault();
+      $(".mobile-sidebar").removeClass("is-shown");
+    });
+    
   // Load Event
   $(window).on('load', function () {
     $('body').addClass("loaded");
@@ -849,5 +890,21 @@
     if (event.keyCode == 27) {
       closeSideMenu();
     }
+  });
+  function showSnackBar(message, time){
+    $('#snackBar').addClass('snackbar--open');
+    $('#snackBar .snackbar__label').text(message);
+    setTimeout(() => {
+      closeSnackBar();
+    }, time);
+  }
+  function closeSnackBar(){
+    $('#snackBar').removeClass('snackbar--open');
+    $('#snackBar .snackbar__label').text('');
+  }
+  $("#btnCloseSnackBar").click(closeSnackBar);
+  // example
+  $("#showSnackBar").click(function(){
+    showSnackBar('تم اضافه المنتج للعربه بنجاح', '5000')
   });
 })(jQuery);

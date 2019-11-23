@@ -5,11 +5,21 @@
   display: flex;
   -ms-flex-direction: row;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 1.5rem;
   color: #7a7d82;
   font-size: 1.4rem;
   line-height: 1.5;
+  @include mq('lg', 'max'){
+    flex-direction: column-reverse;
+    .toolbox__tags{
+      margin-bottom: 0;
+      margin-top: 20px;
+      flex-wrap: nowrap;
+      overflow: auto;
+    }
+  }
 
   &.toolbox-pagination {
     margin-bottom: 5rem;
@@ -182,20 +192,45 @@
   -ms-flex-align: center;
   align-items: center;
 
-  &.toolbox-sort {
-    margin-right: 1.5rem;
-  }
+  // &.toolbox-sort {
+  //   margin-right: 1.5rem;
+  // }
 
   &.toolbox-show {
-    margin-left: auto;
     font-size: 1.2rem;
+    @include mq('md', 'max'){
+      border: 1px solid #e2e2e2;
+      justify-content: space-between;
+      select{
+        border: 0;
+        width: 100px;
+      }
+    }
+    @include mq('md'){
+      border: 0;
+      margin-left: auto;
+      margin-right: 0;
+    }
   }
 
   label {
     margin-right: 1.2rem;
   }
 }
-
+.toolbox-item__item.toolbox-item__filter{
+  padding: 0;
+  margin-right: 5px;
+  @include mq('lg'){
+    display: none;
+  }
+}
+.toolbox-item__item{
+  svg{
+    @include mq('md'){
+      display: none;
+    }
+  }
+}
 .sorter-btn {
   margin-left: .8rem;
   color: #000;
@@ -220,9 +255,11 @@
 }
 
 .layout-modes {
-  display: none;
-  margin-left: 2.1rem;
+  // display: none;
   font-size: 0;
+  @include mq('md'){
+    margin-left: 1.5rem;
+  }
 }
 
 .layout-btn {
@@ -316,4 +353,117 @@
   .horizontal-filter .toolbox-item.toolbox-sort {
     margin-right: 0;
   }
+
+  .toolbox-item__item{
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    flex: 0 0 25%;
+    justify-content: center;
+    &:not(:last-child){
+      border-right: 1px solid #e2e2e2;
+    }
+    &.toolbox-left{
+      flex: 0 0 50%;
+    }
+  }
 }
+.snackbar{
+  z-index: 10000;
+  margin: 8px;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  &--open{
+    opacity: 1;
+    visibility: visible;
+    .snackbar__surface {
+      transform: scale(1);
+      opacity: 1;
+      -webkit-transition: opacity .15s cubic-bezier(0,0,.2,1) 0ms,-webkit-transform .15s cubic-bezier(0,0,.2,1) 0ms;
+      transition: opacity .15s cubic-bezier(0,0,.2,1) 0ms,-webkit-transform .15s cubic-bezier(0,0,.2,1) 0ms;
+      -o-transition: opacity .15s 0ms cubic-bezier(0,0,.2,1),transform .15s 0ms cubic-bezier(0,0,.2,1);
+      transition: opacity .15s cubic-bezier(0,0,.2,1) 0ms,transform .15s cubic-bezier(0,0,.2,1) 0ms;
+      transition: opacity .15s cubic-bezier(0,0,.2,1) 0ms,transform .15s cubic-bezier(0,0,.2,1) 0ms,-webkit-transform .15s cubic-bezier(0,0,.2,1) 0ms;
+    }
+  }
+}
+.snackbar__surface {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  transform: scale(.8);
+  opacity: 0;
+  background-color: #333;
+  max-width: 672px;
+  -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  border-radius: 4px;
+  // transition: all .3s ease-in-out;
+}
+.snackbar__label{
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: .0178571429em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 14px 16px;
+}
+.snackbar__actions {
+  margin-left: 0;
+  margin-right: 8px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snackbar__dismiss {
+  width: 36px;
+  height: 36px;
+  margin-left: 8px;
+  margin-right: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  > svg{
+    width: 10px;
+    height: 10px;
+    fill: #fff;
+  }
+  &:hover,
+  &:focus{
+    background: rgba(#fff, .2);
+    outline: none;
+  }
+}
+

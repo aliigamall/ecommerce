@@ -63,6 +63,13 @@
     height: 270px;
   }
 }
+.product-list{
+  .swiper-pagination{
+    @include mq('lg'){
+      display: none;
+    }
+  }
+}
 
 .product-list__arrows{
   width: 38px;
@@ -72,6 +79,10 @@
   color: $primary-color;
   border: 1px solid;
   border-radius: 50%;
+  display: none;
+  @include mq('lg'){
+    display: flex;
+  }
   &::after{
     display: none;
   }
@@ -163,8 +174,10 @@
   direction: ltr;
   &--installment{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    @include mq('md'){
+      justify-content: space-around;
+    }
   }
 }
 
@@ -188,6 +201,28 @@
 
   & + .product-price {
     margin-left: .6rem;
+  }
+}
+@include mq('lg', 'max'){
+  .product-grid{
+    .ratings-container{
+      display: none;
+    }
+    .product-title{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 1.3rem;
+    }
+    .product-price {
+        font-size: 1.2rem;
+    }
+    .product-price--installment {
+        color: $primary-color;
+        font-size: 11px;
+        padding: 0;
+        background: transparent;
+    }
   }
 }
 
@@ -712,12 +747,21 @@
 .main-slider{
   .swiper-button-next,
   .swiper-button-prev{
-    width: 50px;
-    height: 50px;
+    width: 24px;
+    height: 24px;
     color: $primary-color;
     border: 1px solid;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 10px;
+    top: calc(50% - 12px);
+    display: none;
+    @include mq('lg'){
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      top: calc(50% - 25px);
+      display: flex;
+    }
     &:after{
       content: '';
     }
@@ -732,10 +776,17 @@
     top: auto;
     bottom: auto;
     margin-top: 20px;
+    @include mq('lg', 'max'){
+      margin-top: 0;
+    }
   }
   .swiper-pagination-bullet{
     width: 10px;
     height: 10px;
+    @include mq('lg', 'max'){
+      width: 5px;
+      height: 5px;
+    }
     &.swiper-pagination-bullet-active{
       background-color: #010204;
     }
@@ -845,4 +896,26 @@
 }
 .at-svc-twitter:hover{
   background-color: #1c9deb !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: $primary-color;
+}
+
+.product__mobile-price{
+  margin-bottom: 20px;
+}
+.product__mobile-price-row{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.product__mobile-price-label{
+  width: 100px;
+  text-align: center;
+  background: #6f6f6f;
+  color: #fff;
+  &--primary{
+    background: $primary-color;
+  }
 }
