@@ -547,7 +547,10 @@
     }
   }
 }
-
+.dropdown-cart-products{
+  max-height: 270px;
+  overflow: auto;
+}
 .dropdown-cart-header,
 .dropdown-cart-total {
   display: -ms-flexbox;

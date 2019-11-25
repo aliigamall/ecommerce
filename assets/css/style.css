@@ -7682,6 +7682,11 @@ a:focus {
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
 
+.dropdown-cart-products {
+  max-height: 270px;
+  overflow: auto;
+}
+
 .dropdown-cart-header,
 .dropdown-cart-total {
   display: -ms-flexbox;
@@ -10283,9 +10288,6 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 991px) {
-  .product-grid .ratings-container {
-    display: none;
-  }
   .product-grid .product-title {
     white-space: nowrap;
     overflow: hidden;
@@ -10300,6 +10302,9 @@ button.swiper-pagination-bullet {
     font-size: 11px;
     padding: 0;
     background: transparent;
+  }
+  .product-grid .jq-ry-container {
+    display: none;
   }
 }
 
@@ -11020,6 +11025,12 @@ button.swiper-pagination-bullet {
 
 .product__mobile-price {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .product__mobile-price {
+    display: none;
+  }
 }
 
 .product__mobile-price-row {
@@ -13699,6 +13710,11 @@ a:focus {
   }
 }
 
+.toolbox-item__filter button {
+  border: 0;
+  background: transparent;
+}
+
 @media screen and (min-width: 768px) {
   .toolbox-item__item svg {
     display: none;
@@ -13878,6 +13894,17 @@ a:focus {
   transition: opacity 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
   transition: opacity 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms, transform 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
   transition: opacity 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms, transform 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms, -webkit-transform 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.snackbar--full-width {
+  margin: 0;
+}
+
+.snackbar--full-width .snackbar__surface {
+  max-width: 100%;
+  width: 100%;
+  bottom: 0;
+  border-radius: 0;
 }
 
 .snackbar__surface {
@@ -17759,11 +17786,6 @@ a:focus {
   vertical-align: middle;
 }
 
-.table.table-cart tr th:not(.product-col),
-.table.table-cart tr td:not(.product-col) {
-  text-align: center;
-}
-
 .table.table-cart tr th {
   padding: 2.4rem 1.5rem 1.2rem;
   border: 0;
@@ -18074,6 +18096,15 @@ tbody .product-col {
   .table.table-cart tfoot .float-right {
     margin-left: auto;
   }
+}
+
+.installement-control {
+  height: 30px;
+}
+
+.installement-value {
+  background: #f2f2f2;
+  padding: 10px;
 }
 
 .checkout-progress-bar {

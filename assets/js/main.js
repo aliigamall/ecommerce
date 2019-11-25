@@ -891,20 +891,24 @@
       closeSideMenu();
     }
   });
-  function showSnackBar(message, time){
+  function showSnackBar(message, time, isFullWidth){
+    if(isFullWidth === true)
+      $('#snackBar').addClass('snackbar--full-width');
     $('#snackBar').addClass('snackbar--open');
+
+    (time != null || time != undefined) ? time = time : time = 5000;
     $('#snackBar .snackbar__label').text(message);
     setTimeout(() => {
       closeSnackBar();
     }, time);
   }
   function closeSnackBar(){
-    $('#snackBar').removeClass('snackbar--open');
+    $('#snackBar').removeClass('snackbar--open snackbar--full-width');
     $('#snackBar .snackbar__label').text('');
   }
   $("#btnCloseSnackBar").click(closeSnackBar);
   // example
   $("#showSnackBar").click(function(){
-    showSnackBar('تم اضافه المنتج للعربه بنجاح', '5000')
+    showSnackBar('تم اضافه المنتج للعربه بنجاح', 5000, true)
   });
 })(jQuery);

@@ -9,9 +9,9 @@
     td {
       vertical-align: middle;
 
-      &:not(.product-col) {
-        text-align: center;
-      }
+      // &:not(.product-col) {
+      //   text-align: center;
+      // }
     }
 
     th {
@@ -342,4 +342,12 @@
       }
     }
   }
+}
+
+.installement-control{
+  height: 30px;
+}
+.installement-value{
+  background: #f2f2f2;
+  padding: 10px;
 }
