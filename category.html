@@ -125,7 +125,7 @@
                     <li><a href="" class="side-menu__link">الرئيسيه</a></li>
                     <li><a href="" class="side-menu__link">مشترياتي</a></li>
                     <li><a href="" class="side-menu__link">حسابي</a></li>
-                    <li><a href="" class="side-menu__link">ملخص الحياب</a></li>
+                    <li><a href="" class="side-menu__link">ملخص الحساب</a></li>
                     <li><a href="" class="side-menu__link">خدمه العملاء</a></li>
                     <li><a href="" class="side-menu__link">آخر المستجدات</a></li>
                 </ul>
@@ -143,7 +143,7 @@
                             <li><a href="" class="side-menu__link">الرئيسيه</a></li>
                             <li><a href="" class="side-menu__link">مشترياتي</a></li>
                             <li><a href="" class="side-menu__link">حسابي</a></li>
-                            <li><a href="" class="side-menu__link">ملخص الحياب</a></li>
+                            <li><a href="" class="side-menu__link">ملخص الحساب</a></li>
                             <li><a href="" class="side-menu__link">خدمه العملاء</a></li>
                             <li><a href="" class="side-menu__link">آخر المستجدات</a></li>
                         </ul>
@@ -161,7 +161,7 @@
                             <li><a href="" class="side-menu__link">الرئيسيه</a></li>
                             <li><a href="" class="side-menu__link">مشترياتي</a></li>
                             <li><a href="" class="side-menu__link">حسابي</a></li>
-                            <li><a href="" class="side-menu__link">ملخص الحياب</a></li>
+                            <li><a href="" class="side-menu__link">ملخص الحساب</a></li>
                             <li><a href="" class="side-menu__link">خدمه العملاء</a></li>
                             <li><a href="" class="side-menu__link">آخر المستجدات</a></li>
                         </ul>
@@ -179,7 +179,7 @@
                             <li><a href="" class="side-menu__link">الرئيسيه</a></li>
                             <li><a href="" class="side-menu__link">مشترياتي</a></li>
                             <li><a href="" class="side-menu__link">حسابي</a></li>
-                            <li><a href="" class="side-menu__link">ملخص الحياب</a></li>
+                            <li><a href="" class="side-menu__link">ملخص الحساب</a></li>
                             <li><a href="" class="side-menu__link">خدمه العملاء</a></li>
                             <li><a href="" class="side-menu__link">آخر المستجدات</a></li>
                         </ul>
@@ -696,24 +696,27 @@
                                 </div>
                             </div>
                             <div class="toolbox-item toolbox-show">
-                                <div class="toolbox-item__item toolbox-item__filter">
-                                    <button id="filterBtn" class="">
+                                <div  id="filterBtn" class="toolbox-item__item toolbox-item__filter">
+                                    <button class="">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
                                     </button>
                                     تصنيف 
                                 </div>
                                 <div class="toolbox-left toolbox-item__item">
                                     <div class="toolbox-item toolbox-sort">
-                                        <div class="select-custom">
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-                                            <select name="orderby" class="form-control">
-                                                <option value="menu_order" selected="selected">ترتيب </option>
-                                                <option value="popularity">الأكثر تطابقا</option>
-                                                <option value="rating">الأعلي تقييما</option>
-                                                <option value="date">سعر: من الاقل للاعلي</option>
-                                                <option value="price">سعر: من الاعلي للاقل</option>
-                                            </select>
-                                        </div><!-- End .select-custom -->
+                                                ترتيب
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">الأكثر تطابقا</a>
+                                                <a class="dropdown-item" href="#">الأعلي تقييما</a>
+                                                <a class="dropdown-item" href="#">سعر: من الاقل للاعلي</a>
+                                                <a class="dropdown-item" href="#">سعر: من الاعلي للاقل</a>
+                                            </div>
+                                        </div>
+                                       <!-- End .select-custom -->
     
     
                                     </div><!-- End .toolbox-item -->
@@ -731,68 +734,7 @@
                             </div><!-- End .toolbox-item -->
                         </nav>
                       <div class="products-category">
-                          <div class="product-grid">
-                              <div class="product ">
-                                  <figure class="product-image-container">
-                                      <a href="product.html" class="product-image">
-                                          <span class="product-label label-sale">-20%</span>
-                                          <span class="product-label label-hot">جديد</span>
-                                          <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                              alt="product">
-                                      </a>
-                                      <div class="product__quick-actions">
-                                          <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                          <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                              <span>أضف للعربه</span>
-                                          </a>
-                                      </div>
-                                  </figure>
-                                  <div class="product-list-details">
-                                    <h2 class="product-title">
-                                        <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                        </a>
-                                    </h2>
-                                    <p>
-                                        يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                    </p>
-                                      <ul>
-                                            <li> سعة التخزين: 8 جيجابايت</li>
-                                            <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                            <li> نظام التشغيل: اندرويد</li>
-                                            <li> حجم الذاكرة: 1 جيجابايت</li>
-                                      </ul>
-                                  </div>
-                                  <div class="product-details">
-                                      <div class="ratings-container">
-                                          <a href="#" class="paction" title="أضف للمفضله">
-                                              <i class="icon-heart"></i>
-                                          </a>
-                                          <div class="ratingControl"></div>
-                                          <a href="#" class="paction" title="قارن المنتج">
-                                              <i class="icon-chart"></i>
-                                          </a>
-                                      </div><!-- End .product-container -->
-                                      <h2 class="product-title">
-                                          <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                          </a>
-                                      </h2>
-                                      <div class="price-box">
-                                          <span class="product-price">2000 <label for="">جنيه</label></span>
-                                      </div>
-                                      <div class="price-box price-box--installment">
-                                          <span class="product-price--installment">تقسيط</span>
-                                          <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                      </div>
-                                      
-                                      <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
-                                      <!-- End .price-box -->
-      
-                                      <!-- End .product-action -->
-                                  </div><!-- End .product-details -->
-                              </div><!-- End .product -->
-                          </div>
-                          <div class="product-grid">
-                                <div class="product ">
+                            <div class="product product-grid">
                                     <figure class="product-image-container">
                                         <a href="product.html" class="product-image">
                                             <span class="product-label label-sale">-20%</span>
@@ -801,27 +743,13 @@
                                                 alt="product">
                                         </a>
                                         <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                            <a href="ajax/product-quick-view.html"
+                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
                                             <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
                                                 <span>أضف للعربه</span>
                                             </a>
                                         </div>
                                     </figure>
-                                    <div class="product-list-details">
-                                      <h2 class="product-title">
-                                          <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                          </a>
-                                      </h2>
-                                      <p>
-                                          يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                      </p>
-                                        <ul>
-                                              <li> سعة التخزين: 8 جيجابايت</li>
-                                              <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                              <li> نظام التشغيل: اندرويد</li>
-                                              <li> حجم الذاكرة: 1 جيجابايت</li>
-                                        </ul>
-                                    </div>
                                     <div class="product-details">
                                         <div class="ratings-container">
                                             <a href="#" class="paction" title="أضف للمفضله">
@@ -836,23 +764,25 @@
                                             <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                             </a>
                                         </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                        <div class="product__mobile-price product__compo-price">
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label">كاش</span>
+                                                <span>2000 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                <span>40 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-buy">
+                                                <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                            </div>
                                         </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-                                        
-                                        <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
                                         <!-- End .price-box -->
-        
+
                                         <!-- End .product-action -->
                                     </div><!-- End .product-details -->
                                 </div><!-- End .product -->
-                            </div>
-                            <div class="product-grid">
-                                    <div class="product ">
+                                <div class="product product-grid">
                                         <figure class="product-image-container">
                                             <a href="product.html" class="product-image">
                                                 <span class="product-label label-sale">-20%</span>
@@ -861,27 +791,13 @@
                                                     alt="product">
                                             </a>
                                             <div class="product__quick-actions">
-                                                <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                <a href="ajax/product-quick-view.html"
+                                                    class="product__quick-action-btn btn-quickview">عرض سريع</a>
                                                 <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
                                                     <span>أضف للعربه</span>
                                                 </a>
                                             </div>
                                         </figure>
-                                        <div class="product-list-details">
-                                          <h2 class="product-title">
-                                              <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                              </a>
-                                          </h2>
-                                          <p>
-                                              يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                          </p>
-                                            <ul>
-                                                  <li> سعة التخزين: 8 جيجابايت</li>
-                                                  <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                                  <li> نظام التشغيل: اندرويد</li>
-                                                  <li> حجم الذاكرة: 1 جيجابايت</li>
-                                            </ul>
-                                        </div>
                                         <div class="product-details">
                                             <div class="ratings-container">
                                                 <a href="#" class="paction" title="أضف للمفضله">
@@ -896,23 +812,25 @@
                                                 <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                                 </a>
                                             </h2>
-                                            <div class="price-box">
-                                                <span class="product-price">2000 <label for="">جنيه</label></span>
+                                            <div class="product__mobile-price product__compo-price">
+                                                <div class="product__mobile-price-row">
+                                                    <span class="product__mobile-price-label">كاش</span>
+                                                    <span>2000 جنيه</span>
+                                                </div>
+                                                <div class="product__mobile-price-row">
+                                                    <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                    <span>40 جنيه</span>
+                                                </div>
+                                                <div class="product__mobile-price-buy">
+                                                    <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                </div>
                                             </div>
-                                            <div class="price-box price-box--installment">
-                                                <span class="product-price--installment">تقسيط</span>
-                                                <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                            </div>
-                                            
-                                            <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
                                             <!-- End .price-box -->
-            
+    
                                             <!-- End .product-action -->
                                         </div><!-- End .product-details -->
                                     </div><!-- End .product -->
-                                </div>
-                                <div class="product-grid">
-                                        <div class="product ">
+                                    <div class="product product-grid">
                                             <figure class="product-image-container">
                                                 <a href="product.html" class="product-image">
                                                     <span class="product-label label-sale">-20%</span>
@@ -921,27 +839,13 @@
                                                         alt="product">
                                                 </a>
                                                 <div class="product__quick-actions">
-                                                    <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
                                                     <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
                                                         <span>أضف للعربه</span>
                                                     </a>
                                                 </div>
                                             </figure>
-                                            <div class="product-list-details">
-                                              <h2 class="product-title">
-                                                  <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                                  </a>
-                                              </h2>
-                                              <p>
-                                                  يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                              </p>
-                                                <ul>
-                                                      <li> سعة التخزين: 8 جيجابايت</li>
-                                                      <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                                      <li> نظام التشغيل: اندرويد</li>
-                                                      <li> حجم الذاكرة: 1 جيجابايت</li>
-                                                </ul>
-                                            </div>
                                             <div class="product-details">
                                                 <div class="ratings-container">
                                                     <a href="#" class="paction" title="أضف للمفضله">
@@ -956,23 +860,25 @@
                                                     <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                                     </a>
                                                 </h2>
-                                                <div class="price-box">
-                                                    <span class="product-price">2000 <label for="">جنيه</label></span>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
                                                 </div>
-                                                <div class="price-box price-box--installment">
-                                                    <span class="product-price--installment">تقسيط</span>
-                                                    <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                                </div>
-                                                
-                                                <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
                                                 <!-- End .price-box -->
-                
+        
                                                 <!-- End .product-action -->
                                             </div><!-- End .product-details -->
                                         </div><!-- End .product -->
-                                    </div>
-                                    <div class="product-grid">
-                                            <div class="product ">
+                                        <div class="product product-grid">
                                                 <figure class="product-image-container">
                                                     <a href="product.html" class="product-image">
                                                         <span class="product-label label-sale">-20%</span>
@@ -981,27 +887,13 @@
                                                             alt="product">
                                                     </a>
                                                     <div class="product__quick-actions">
-                                                        <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                        <a href="ajax/product-quick-view.html"
+                                                            class="product__quick-action-btn btn-quickview">عرض سريع</a>
                                                         <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
                                                             <span>أضف للعربه</span>
                                                         </a>
                                                     </div>
                                                 </figure>
-                                                <div class="product-list-details">
-                                                  <h2 class="product-title">
-                                                      <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                                      </a>
-                                                  </h2>
-                                                  <p>
-                                                      يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                                  </p>
-                                                    <ul>
-                                                          <li> سعة التخزين: 8 جيجابايت</li>
-                                                          <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                                          <li> نظام التشغيل: اندرويد</li>
-                                                          <li> حجم الذاكرة: 1 جيجابايت</li>
-                                                    </ul>
-                                                </div>
                                                 <div class="product-details">
                                                     <div class="ratings-container">
                                                         <a href="#" class="paction" title="أضف للمفضله">
@@ -1016,23 +908,25 @@
                                                         <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                                         </a>
                                                     </h2>
-                                                    <div class="price-box">
-                                                        <span class="product-price">2000 <label for="">جنيه</label></span>
+                                                    <div class="product__mobile-price product__compo-price">
+                                                        <div class="product__mobile-price-row">
+                                                            <span class="product__mobile-price-label">كاش</span>
+                                                            <span>2000 جنيه</span>
+                                                        </div>
+                                                        <div class="product__mobile-price-row">
+                                                            <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                            <span>40 جنيه</span>
+                                                        </div>
+                                                        <div class="product__mobile-price-buy">
+                                                            <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                        </div>
                                                     </div>
-                                                    <div class="price-box price-box--installment">
-                                                        <span class="product-price--installment">تقسيط</span>
-                                                        <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                                    </div>
-                                                    
-                                                    <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
                                                     <!-- End .price-box -->
-                    
+            
                                                     <!-- End .product-action -->
                                                 </div><!-- End .product-details -->
                                             </div><!-- End .product -->
-                                        </div>
-                                        <div class="product-grid">
-                                                <div class="product ">
+                                            <div class="product product-grid">
                                                     <figure class="product-image-container">
                                                         <a href="product.html" class="product-image">
                                                             <span class="product-label label-sale">-20%</span>
@@ -1041,27 +935,13 @@
                                                                 alt="product">
                                                         </a>
                                                         <div class="product__quick-actions">
-                                                            <a href="ajax/product-quick-view.html" class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                            <a href="ajax/product-quick-view.html"
+                                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
                                                             <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
                                                                 <span>أضف للعربه</span>
                                                             </a>
                                                         </div>
                                                     </figure>
-                                                    <div class="product-list-details">
-                                                      <h2 class="product-title">
-                                                          <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                                          </a>
-                                                      </h2>
-                                                      <p>
-                                                          يتميز تابلت لينوفو تاب 7 TB-.كوم. يمكنك العمل أو اللعب أثناء التنقل باستخدام تابلت لينوفو
-                                                      </p>
-                                                        <ul>
-                                                              <li> سعة التخزين: 8 جيجابايت</li>
-                                                              <li> حجم الشاشة: 7 - 7.9 انش</li>
-                                                              <li> نظام التشغيل: اندرويد</li>
-                                                              <li> حجم الذاكرة: 1 جيجابايت</li>
-                                                        </ul>
-                                                    </div>
                                                     <div class="product-details">
                                                         <div class="ratings-container">
                                                             <a href="#" class="paction" title="أضف للمفضله">
@@ -1076,21 +956,120 @@
                                                             <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                                             </a>
                                                         </h2>
-                                                        <div class="price-box">
-                                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                                        <div class="product__mobile-price product__compo-price">
+                                                            <div class="product__mobile-price-row">
+                                                                <span class="product__mobile-price-label">كاش</span>
+                                                                <span>2000 جنيه</span>
+                                                            </div>
+                                                            <div class="product__mobile-price-row">
+                                                                <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                                <span>40 جنيه</span>
+                                                            </div>
+                                                            <div class="product__mobile-price-buy">
+                                                                <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                            </div>
                                                         </div>
-                                                        <div class="price-box price-box--installment">
-                                                            <span class="product-price--installment">تقسيط</span>
-                                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                                        </div>
-                                                        
-                                                        <a href="#" class="btn btn-secondary product-list-button">انقر هنا للمزيد من المعلومات</a>
                                                         <!-- End .price-box -->
-                        
+                
                                                         <!-- End .product-action -->
                                                     </div><!-- End .product-details -->
                                                 </div><!-- End .product -->
-                                            </div>
+                                                <div class="product product-grid">
+                                                        <figure class="product-image-container">
+                                                            <a href="product.html" class="product-image">
+                                                                <span class="product-label label-sale">-20%</span>
+                                                                <span class="product-label label-hot">جديد</span>
+                                                                <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                                    alt="product">
+                                                            </a>
+                                                            <div class="product__quick-actions">
+                                                                <a href="ajax/product-quick-view.html"
+                                                                    class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                                <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                                    <span>أضف للعربه</span>
+                                                                </a>
+                                                            </div>
+                                                        </figure>
+                                                        <div class="product-details">
+                                                            <div class="ratings-container">
+                                                                <a href="#" class="paction" title="أضف للمفضله">
+                                                                    <i class="icon-heart"></i>
+                                                                </a>
+                                                                <div class="ratingControl"></div>
+                                                                <a href="#" class="paction" title="قارن المنتج">
+                                                                    <i class="icon-chart"></i>
+                                                                </a>
+                                                            </div><!-- End .product-container -->
+                                                            <h2 class="product-title">
+                                                                <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                                </a>
+                                                            </h2>
+                                                            <div class="product__mobile-price product__compo-price">
+                                                                <div class="product__mobile-price-row">
+                                                                    <span class="product__mobile-price-label">كاش</span>
+                                                                    <span>2000 جنيه</span>
+                                                                </div>
+                                                                <div class="product__mobile-price-row">
+                                                                    <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                                    <span>40 جنيه</span>
+                                                                </div>
+                                                                <div class="product__mobile-price-buy">
+                                                                    <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                                </div>
+                                                            </div>
+                                                            <!-- End .price-box -->
+                    
+                                                            <!-- End .product-action -->
+                                                        </div><!-- End .product-details -->
+                                                    </div><!-- End .product -->
+                                                    <div class="product product-grid">
+                                                            <figure class="product-image-container">
+                                                                <a href="product.html" class="product-image">
+                                                                    <span class="product-label label-sale">-20%</span>
+                                                                    <span class="product-label label-hot">جديد</span>
+                                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                                        alt="product">
+                                                                </a>
+                                                                <div class="product__quick-actions">
+                                                                    <a href="ajax/product-quick-view.html"
+                                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                                        <span>أضف للعربه</span>
+                                                                    </a>
+                                                                </div>
+                                                            </figure>
+                                                            <div class="product-details">
+                                                                <div class="ratings-container">
+                                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                                        <i class="icon-heart"></i>
+                                                                    </a>
+                                                                    <div class="ratingControl"></div>
+                                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                                        <i class="icon-chart"></i>
+                                                                    </a>
+                                                                </div><!-- End .product-container -->
+                                                                <h2 class="product-title">
+                                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                                    </a>
+                                                                </h2>
+                                                                <div class="product__mobile-price product__compo-price">
+                                                                    <div class="product__mobile-price-row">
+                                                                        <span class="product__mobile-price-label">كاش</span>
+                                                                        <span>2000 جنيه</span>
+                                                                    </div>
+                                                                    <div class="product__mobile-price-row">
+                                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                                        <span>40 جنيه</span>
+                                                                    </div>
+                                                                    <div class="product__mobile-price-buy">
+                                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- End .price-box -->
+                        
+                                                                <!-- End .product-action -->
+                                                            </div><!-- End .product-details -->
+                                                        </div><!-- End .product -->
                       </div>
 
                         <nav class="toolbox toolbox-pagination">
@@ -1712,7 +1691,78 @@
             </div><!-- End .social-icons -->
         </div><!-- End .mobile-menu-wrapper -->
     </div><!-- End .mobile-menu-container -->
-
+    <div class="product-price-modal">
+            <div class="product-price-modal__backdrop"></div>
+            <div class="widget product-price-widget">
+                    <h4 class="product-price-widget__title">السعر كاش</h4>
+                    <div class="product-price__panel">
+                        <div class="product-price__select">
+                            <div class="mdc-radio">
+                                <input id="rb1" type="radio" name="productOptions" checked="checked" />
+                                <label for="rb1">
+                                    <strong>٢٢٩٠ جنيه</strong>
+                                    <span>٣٠٠٠ جنيه</span>
+                                </label>
+                            </div>
+                            <div class="product__padge">
+                                بدون فوائد
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="product-price-widget__title">أو قسط</h4>
+                    <div class="product-price__panel">
+                        <div class="product-price__installement">
+                            المقدم
+                            <input type="text" />
+                            جنيه
+                        </div>
+                        <div class="product-price__select">
+                            <div class="mdc-radio">
+                                <input id="rb2" type="radio" name="productOptions" />
+                                <label for="rb2">
+                                    <strong>٢٢٩٠ جنيه</strong>
+                                    <span>٣٠٠٠ جنيه</span>
+                                </label>
+                            </div>
+                            <div class="product__padge product__padge--orange">
+                                بدون فوائد
+                            </div>
+                        </div>
+                        <div class="product-price__select">
+                            <div class="mdc-radio">
+                                <input id="rb3" type="radio" name="productOptions" />
+                                <label for="rb3">
+                                    <strong>٢٢٩٠ جنيه</strong>
+                                    <span>٣٠٠٠ جنيه</span>
+                                </label>
+                            </div>
+                            <div class="product__padge product__padge--orange">
+                                بدون فوائد
+                            </div>
+                        </div>
+                        <div class="product-price__select">
+                            <div class="mdc-radio">
+                                <input id="rb4" type="radio" name="productOptions" />
+                                <label for="rb4">
+                                    <strong>٢٢٩٠ جنيه</strong>
+                                    <span>٣٠٠٠ جنيه</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="product-price__select">
+                            <div class="mdc-radio">
+                                <input id="rb5" type="radio" name="productOptions" />
+                                <label for="rb5">
+                                    <strong>٢٢٩٠ جنيه</strong>
+                                    <span>٣٠٠٠ جنيه</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-block btn-primary">اشتري الان</button>
+                    <button class="btn-buy-close btn btn-block btn-light">إغلاق</button>
+                </div>
+        </div>
     <a id="scroll-top" href="#top" title="Top" role="button"><i class="icon-angle-up"></i></a>
 
     <!-- Plugins JS File -->

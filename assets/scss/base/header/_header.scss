@@ -1180,7 +1180,7 @@
   }
   .dropdown-menu{
     display: block;
-    width: 120px;
+    width: 150px;
     opacity: 0;
     visibility: hidden;
     transform: translate(0, 5px);
@@ -1215,6 +1215,7 @@
   left: 4px;
   top: 90px;
   width: auto;
+  text-align: left;
   @include mq('md'){
     top: 100%;
     width: 100%;
@@ -1287,4 +1288,20 @@
 }
 .search-products__specs{
   margin-bottom: 0;
+}
+.dropdown-menu__login{
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 12px;
+  padding-top: 5px;
+  text-align: center;
+  a:not(.btn){
+    display: block;
+    color: $primary-color;
+  }
+}
+.dropdown__logout{
+  margin: 5px;
+  text-align: center;
+  width: auto;
 }

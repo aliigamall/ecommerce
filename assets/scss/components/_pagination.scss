@@ -185,7 +185,15 @@
   -ms-flex-align: center;
   align-items: center;
 }
-
+.toolbox-sort{
+  width: 100%;
+  .dropdown{
+    width: 100%;
+    button{
+      width: 100%;
+    }
+  }
+}
 .toolbox-item {
   display: -ms-flexbox;
   display: flex;
@@ -355,7 +363,7 @@
   }
 }
 
-@include mq('sm', 'max') {
+@include mq('lg', 'max') {
   .horizontal-filter .toolbox-item.toolbox-sort {
     margin-right: 0;
   }
@@ -370,9 +378,7 @@
     justify-content: center;
     &:not(:last-child){
       border-right: 1px solid #e2e2e2;
-    }
-    &.toolbox-left{
-      flex: 0 0 50%;
+      flex: 1;
     }
   }
 }

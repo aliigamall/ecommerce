@@ -347,3 +347,18 @@ $menu-item-height: 48px !default;
     height: 100%;
   }
 }
+.menu > .megamenu-container--dark:hover {
+  > a{
+    background-color: #333;
+    color: #fff;
+  }
+  .megamenu, ul{
+    background-color: #333;
+    a{
+      color: #fff;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+}

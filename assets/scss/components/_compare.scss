@@ -8,6 +8,7 @@
     width: 100%;
     padding: 10px 0;
     z-index: 100;
+    display: none;
     transform: translate(0, 100%);
     transition: all .2s ease-in-out;
     @include mq('xl'){
@@ -15,6 +16,9 @@
     }
     &.is-open{
         transform: translate(0, 0);
+    }
+    &.is-shown{
+        display: block;
     }
 }
 .compare-panel__close{

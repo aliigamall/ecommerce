@@ -159,7 +159,7 @@
                     <li><a href="" class="side-menu__link">الرئيسيه</a></li>
                     <li><a href="" class="side-menu__link">مشترياتي</a></li>
                     <li><a href="" class="side-menu__link">حسابي</a></li>
-                    <li><a href="" class="side-menu__link">ملخص الحياب</a></li>
+                    <li><a href="" class="side-menu__link">ملخص الحساب</a></li>
                     <li><a href="" class="side-menu__link">خدمه العملاء</a></li>
                     <li><a href="" class="side-menu__link">آخر المستجدات</a></li>
                 </ul>
@@ -177,7 +177,7 @@
                             <li><a href="" class="side-menu__link">الرئيسيه</a></li>
                             <li><a href="" class="side-menu__link">مشترياتي</a></li>
                             <li><a href="" class="side-menu__link">حسابي</a></li>
-                            <li><a href="" class="side-menu__link">ملخص الحياب</a></li>
+                            <li><a href="" class="side-menu__link">ملخص الحساب</a></li>
                             <li><a href="" class="side-menu__link">خدمه العملاء</a></li>
                             <li><a href="" class="side-menu__link">آخر المستجدات</a></li>
                         </ul>
@@ -206,7 +206,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="" class="side-menu__link">ملخص الحياب</a></li>
+                            <li><a href="" class="side-menu__link">ملخص الحساب</a></li>
                             <li><a href="" class="side-menu__link">خدمه العملاء</a></li>
                             <li><a href="" class="side-menu__link">آخر المستجدات</a></li>
                         </ul>
@@ -224,7 +224,7 @@
                             <li><a href="" class="side-menu__link">الرئيسيه</a></li>
                             <li><a href="" class="side-menu__link">مشترياتي</a></li>
                             <li><a href="" class="side-menu__link">حسابي</a></li>
-                            <li><a href="" class="side-menu__link">ملخص الحياب</a></li>
+                            <li><a href="" class="side-menu__link">ملخص الحساب</a></li>
                             <li><a href="" class="side-menu__link">خدمه العملاء</a></li>
                             <li><a href="" class="side-menu__link">آخر المستجدات</a></li>
                         </ul>
@@ -393,7 +393,7 @@
                             <div class="header-search">
                                 <a href="" class="search-toggle"><i class="icon-magnifier"></i></a>
                                 <div class="header-search-wrapper">
-                                    <input type="search" class="form-control" name="q" id="q"
+                                    <input type="search" class="form-control" autocomplete="off" name="q" id="q"
                                         placeholder="ما الذي تبحث عنه؟" required>
                                     <button class="btn" type="submit"><i class="icon-magnifier"></i></button>
                                 </div><!-- End .header-search-wrapper -->
@@ -472,10 +472,18 @@
                                     </svg>
                                 </span>
                                 <div class="dropdown-menu">
+                                    <div class="dropdown-menu__login">
+                                        <a href="#" class="btn btn-sm btn-block btn-primary">دخول</a>
+                                        <span>لا تمتلك حساب ؟</span>
+                                        <a href="#">سجل الآن</a>
+                                        <span>مرحبا <strong>علي</strong></span>
+                                    </div>
+
                                     <a class="dropdown-item" href="#my-account.html"> <i class="icon-lock"></i>حسابي</a>
                                     <a class="dropdown-item" href="##"> <i class="icon-heart"></i> المفضله</a>
                                     <a class="dropdown-item" href="##"><i class="icon-bag"></i> مشترياتي</a>
                                     <a class="dropdown-item" href="##"> <i class="icon-city"></i> عناويني</a>
+                                    <a class="dropdown-item dropdown__logout btn-secondary" href="##"> تسجيل الخروج</a>
                                 </div>
                             </div>
                             <div class="dropdown cart-dropdown">
@@ -641,7 +649,20 @@
                         <nav class="main-nav">
                             <ul class="menu sf-arrows">
                                 <li><a href="#">جميع الفئات</a></li>
-                                <li class="special"><a href="index.html">عروض كل يوم</a></li>
+                                <li class="special megamenu-container megamenu-container--dark">
+                                    <a href="product.html">عروض كل يوم</a>
+                                    <div class="megamenu megamenu__horizontal">
+                                        <ul>
+                                            <li><a href="product.html">
+                                                    هواوي P30 لايت</a></li>
+                                            <li><a href="product-full-width.html">وان بلس 6t
+                                                    <span class="tip tip-hot">جديد!</span></a></li>
+                                            <li><a href="product.html"> Y7 2019 هواوي</a></li>
+                                            <li><a href="product-addcart-sticky.html"> هونور 10 لايت
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li class="megamenu-container">
                                     <a href="product.html" class="sf-with-ul">موبايل وتابلت</a>
                                     <div class="megamenu">
@@ -1012,21 +1033,7 @@
                                 <li><a href="#">اجهزة منزلية صغيرة
                                     </a>
                                 </li>
-                                <li class="megamenu-container">
-                                    <a href="product.html" class="sf-with-ul">Pages</a>
-                                    <div class="megamenu megamenu__horizontal">
-
-                                        <ul>
-                                            <li><a href="product.html">
-                                                    هواوي P30 لايت</a></li>
-                                            <li><a href="product-full-width.html">وان بلس 6t
-                                                    <span class="tip tip-hot">جديد!</span></a></li>
-                                            <li><a href="product.html"> Y7 2019 هواوي</a></li>
-                                            <li><a href="product-addcart-sticky.html"> هونور 10 لايت
-                                                </a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                
                                 <li><a href="#">ادوات العناية الشخصية
                                     </a></li>
                                 <li><a href="#">لاب توب و كمبيوتر
@@ -1166,14 +1173,19 @@
                                             <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                             </a>
                                         </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                        <div class="product__mobile-price product__compo-price">
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label">كاش</span>
+                                                <span>2000 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                <span>40 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-buy">
+                                                <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                            </div>
                                         </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
                                         <!-- End .price-box -->
 
                                         <!-- End .product-action -->
@@ -1211,14 +1223,19 @@
                                             <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                             </a>
                                         </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                        <div class="product__mobile-price product__compo-price">
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label">كاش</span>
+                                                <span>2000 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                <span>40 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-buy">
+                                                <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                            </div>
                                         </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
                                         <!-- End .price-box -->
 
                                         <!-- End .product-action -->
@@ -1256,14 +1273,19 @@
                                             <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                             </a>
                                         </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                        <div class="product__mobile-price product__compo-price">
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label">كاش</span>
+                                                <span>2000 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                <span>40 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-buy">
+                                                <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                            </div>
                                         </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
                                         <!-- End .price-box -->
 
                                         <!-- End .product-action -->
@@ -1301,14 +1323,19 @@
                                             <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                             </a>
                                         </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                        <div class="product__mobile-price product__compo-price">
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label">كاش</span>
+                                                <span>2000 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                <span>40 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-buy">
+                                                <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                            </div>
                                         </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
                                         <!-- End .price-box -->
 
                                         <!-- End .product-action -->
@@ -1346,14 +1373,71 @@
                                             <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                             </a>
                                         </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                        <div class="product__mobile-price product__compo-price">
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label">كاش</span>
+                                                <span>2000 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                <span>40 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-buy">
+                                                <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                            </div>
                                         </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
+                                        <!-- End .price-box -->
 
+                                        <!-- End .product-action -->
+                                    </div><!-- End .product-details -->
+                                </div><!-- End .product -->
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product product-grid">
+                                    <figure class="product-image-container">
+                                        <a href="product.html" class="product-image">
+                                            <span class="product-label label-sale">-20%</span>
+                                            <span class="product-label label-hot">جديد</span>
+                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                alt="product">
+                                        </a>
+                                        <div class="product__quick-actions">
+                                            <a href="ajax/product-quick-view.html"
+                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                <span>أضف للعربه</span>
+                                            </a>
+                                        </div>
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="ratings-container">
+                                            <a href="#" class="paction" title="أضف للمفضله">
+                                                <i class="icon-heart"></i>
+                                            </a>
+                                            <div class="ratingControl"></div>
+                                            <a href="#" class="paction" title="قارن المنتج">
+                                                <i class="icon-chart"></i>
+                                            </a>
+                                        </div><!-- End .product-container -->
+                                        <h2 class="product-title">
+                                            <a href="product.html">
+                                                ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                ماكينة قهوة - اسود, EC9
+                                            </a>
+                                        </h2>
+                                        <div class="product__mobile-price product__compo-price">
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label">كاش</span>
+                                                <span>2000 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                <span>40 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-buy">
+                                                <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                            </div>
+                                        </div>
                                         <!-- End .price-box -->
 
                                         <!-- End .product-action -->
@@ -1391,14 +1475,19 @@
                                             <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
                                             </a>
                                         </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
+                                        <div class="product__mobile-price product__compo-price">
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label">كاش</span>
+                                                <span>2000 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-row">
+                                                <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                <span>40 جنيه</span>
+                                            </div>
+                                            <div class="product__mobile-price-buy">
+                                                <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                            </div>
                                         </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
                                         <!-- End .price-box -->
 
                                         <!-- End .product-action -->
@@ -1422,278 +1511,360 @@
                     <h2 class="carousel-title"><span>أفضل العروض</span></h2>
 
                     <div class="swiper-container product-list">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                        </div>
+                            <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">
+                                                        ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                        ماكينة قهوة - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                </div>
                         <div class="swiper-pagination"></div>
                         <div class="product-list__arrows swiper-button-next"><i class="icon-left-open-big"></i></div>
                         <div class="product-list__arrows swiper-button-prev"><i class="icon-right-open-big"></i></div>
@@ -1709,278 +1880,360 @@
                 <div class="container">
                     <h2 class="carousel-title"><span>الأكثر مبيعا</span></h2>
                     <div class="swiper-container product-list">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product product-grid">
-                                    <figure class="product-image-container">
-                                        <a href="product.html" class="product-image">
-                                            <span class="product-label label-sale">-20%</span>
-                                            <span class="product-label label-hot">جديد</span>
-                                            <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
-                                                alt="product">
-                                        </a>
-                                        <div class="product__quick-actions">
-                                            <a href="ajax/product-quick-view.html"
-                                                class="product__quick-action-btn btn-quickview">عرض سريع</a>
-                                            <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
-                                                <span>أضف للعربه</span>
-                                            </a>
-                                        </div>
-                                    </figure>
-                                    <div class="product-details">
-                                        <div class="ratings-container">
-                                            <a href="#" class="paction" title="أضف للمفضله">
-                                                <i class="icon-heart"></i>
-                                            </a>
-                                            <div class="ratingControl"></div>
-                                            <a href="#" class="paction" title="قارن المنتج">
-                                                <i class="icon-chart"></i>
-                                            </a>
-                                        </div><!-- End .product-container -->
-                                        <h2 class="product-title">
-                                            <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
-                                            </a>
-                                        </h2>
-                                        <div class="price-box">
-                                            <span class="product-price">2000 <label for="">جنيه</label></span>
-                                        </div>
-                                        <div class="price-box price-box--installment">
-                                            <span class="product-price--installment">تقسيط</span>
-                                            <span class="product-price">40.00 <label for="">جنيه</label></span>
-                                        </div>
-
-                                        <!-- End .price-box -->
-
-                                        <!-- End .product-action -->
-                                    </div><!-- End .product-details -->
-                                </div><!-- End .product -->
-                            </div>
-                        </div>
+                            <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">
+                                                        ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                        ماكينة قهوة - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product product-grid">
+                                            <figure class="product-image-container">
+                                                <a href="product.html" class="product-image">
+                                                    <span class="product-label label-sale">-20%</span>
+                                                    <span class="product-label label-hot">جديد</span>
+                                                    <img src="https://k.nooncdn.com/t_desktop-thumbnail-v2/v1547790258/N18566601A_1.jpg"
+                                                        alt="product">
+                                                </a>
+                                                <div class="product__quick-actions">
+                                                    <a href="ajax/product-quick-view.html"
+                                                        class="product__quick-action-btn btn-quickview">عرض سريع</a>
+                                                    <a href="product.html" class="product__quick-action-btn" title="أضف للعربه">
+                                                        <span>أضف للعربه</span>
+                                                    </a>
+                                                </div>
+                                            </figure>
+                                            <div class="product-details">
+                                                <div class="ratings-container">
+                                                    <a href="#" class="paction" title="أضف للمفضله">
+                                                        <i class="icon-heart"></i>
+                                                    </a>
+                                                    <div class="ratingControl"></div>
+                                                    <a href="#" class="paction" title="قارن المنتج">
+                                                        <i class="icon-chart"></i>
+                                                    </a>
+                                                </div><!-- End .product-container -->
+                                                <h2 class="product-title">
+                                                    <a href="product.html">ماكينة قهوة اسبريسو وكابتشينو من ديلونجي - اسود, EC9
+                                                    </a>
+                                                </h2>
+                                                <div class="product__mobile-price product__compo-price">
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label">كاش</span>
+                                                        <span>2000 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-row">
+                                                        <span class="product__mobile-price-label product__mobile-price-label--primary">تقسيط</span>
+                                                        <span>40 جنيه</span>
+                                                    </div>
+                                                    <div class="product__mobile-price-buy">
+                                                        <button class="btn-buy-widget btn btn-primary btn-block">إشتري الآن</button>
+                                                    </div>
+                                                </div>
+                                                <!-- End .price-box -->
+        
+                                                <!-- End .product-action -->
+                                            </div><!-- End .product-details -->
+                                        </div><!-- End .product -->
+                                    </div>
+                                </div>
                         <div class="swiper-pagination"></div>
                         <div class="product-list__arrows swiper-button-next"><i class="icon-left-open-big"></i></div>
                         <div class="product-list__arrows swiper-button-prev"><i class="icon-right-open-big"></i></div>
@@ -2089,7 +2342,7 @@
                     </div><!-- End .info-box -->
                 </div><!-- End .container -->
             </div><!-- End .info-boxes-container -->
-            <div class="compare-panel is-open">
+            <div class="compare-panel is-shown is-open">
                 <a href="#" class="compare-panel__close">مقارناتي</a>
                 <div class="container compare-panel__container">
                     <ul class="compare-panel__list">
@@ -2325,6 +2578,78 @@
         </div>
     </div>
     <button id="showSnackBar">show snackbar</button>
+    <div class="product-price-modal">
+        <div class="product-price-modal__backdrop"></div>
+        <div class="widget product-price-widget">
+                <h4 class="product-price-widget__title">السعر كاش</h4>
+                <div class="product-price__panel">
+                    <div class="product-price__select">
+                        <div class="mdc-radio">
+                            <input id="rb1" type="radio" name="productOptions" checked="checked" />
+                            <label for="rb1">
+                                <strong>٢٢٩٠ جنيه</strong>
+                                <span>٣٠٠٠ جنيه</span>
+                            </label>
+                        </div>
+                        <div class="product__padge">
+                            بدون فوائد
+                        </div>
+                    </div>
+                </div>
+                <h4 class="product-price-widget__title">أو قسط</h4>
+                <div class="product-price__panel">
+                    <div class="product-price__installement">
+                        المقدم
+                        <input type="text" />
+                        جنيه
+                    </div>
+                    <div class="product-price__select">
+                        <div class="mdc-radio">
+                            <input id="rb2" type="radio" name="productOptions" />
+                            <label for="rb2">
+                                <strong>٢٢٩٠ جنيه</strong>
+                                <span>٣٠٠٠ جنيه</span>
+                            </label>
+                        </div>
+                        <div class="product__padge product__padge--orange">
+                            بدون فوائد
+                        </div>
+                    </div>
+                    <div class="product-price__select">
+                        <div class="mdc-radio">
+                            <input id="rb3" type="radio" name="productOptions" />
+                            <label for="rb3">
+                                <strong>٢٢٩٠ جنيه</strong>
+                                <span>٣٠٠٠ جنيه</span>
+                            </label>
+                        </div>
+                        <div class="product__padge product__padge--orange">
+                            بدون فوائد
+                        </div>
+                    </div>
+                    <div class="product-price__select">
+                        <div class="mdc-radio">
+                            <input id="rb4" type="radio" name="productOptions" />
+                            <label for="rb4">
+                                <strong>٢٢٩٠ جنيه</strong>
+                                <span>٣٠٠٠ جنيه</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="product-price__select">
+                        <div class="mdc-radio">
+                            <input id="rb5" type="radio" name="productOptions" />
+                            <label for="rb5">
+                                <strong>٢٢٩٠ جنيه</strong>
+                                <span>٣٠٠٠ جنيه</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-block btn-primary">اشتري الان</button>
+                <button class="btn-buy-close btn btn-block btn-light">إغلاق</button>
+            </div>
+    </div>
     <a id="scroll-top" href="#top" title="Top" role="button"><i class="icon-angle-up"></i></a>
 
     <!-- Plugins JS File -->

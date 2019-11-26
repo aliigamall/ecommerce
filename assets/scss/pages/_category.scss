@@ -736,14 +736,14 @@
   margin-right: -10px;
   margin-left: -10px;
   .product-grid{
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 33.333%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
     @include mq('lg'){
       flex: 0 0 25%;
       max-width: 25%;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }
@@ -755,6 +755,9 @@
   .product-grid {
     width: 100%;
     min-width: 100%;
+  }
+  .product-details{
+    width: 100%;
   }
   .product {
     display: flex;
@@ -787,7 +790,7 @@
   }
   .product-details{
     @include mq('md', 'max'){
-      text-align-last: left;
+      // text-align-last: left;
       .product-title{
         white-space: inherit;
       }
