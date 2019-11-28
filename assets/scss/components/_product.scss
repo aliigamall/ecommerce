@@ -207,11 +207,9 @@
 }
 .product-grid{
   .product-details{
-    @include mq('lg'){
-      height: 260px;
-      display: flex;
-      flex-direction: column;
-    }
+    height: 260px;
+    display: flex;
+    flex-direction: column;
   }
   .product__compo-price{
     margin-top: auto;

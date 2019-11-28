@@ -966,4 +966,11 @@
   $('.btn-buy-close, .product-price-modal__backdrop').on('click', function(){
     $('.product-price-modal').removeClass('is-shown');
   });
+
+  if ($('.accordion').length) {
+    $('.accordion__title').on('click', function(){
+      $(this).toggleClass('is-expanded');
+      $(this).parent().find('.accordion__child').eq(0).slideToggle(200);
+    });
+  }
 })(jQuery);

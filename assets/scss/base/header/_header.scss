@@ -112,7 +112,11 @@
 
   img {
     display: block;
-    width: 170px;
+    // width: 170px;
+    height: 25px;
+    @include mq('md'){
+      height: 40px;
+    }
   }
 }
 

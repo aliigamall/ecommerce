@@ -7233,7 +7233,13 @@ a:focus {
 
 .logo img {
   display: block;
-  width: 170px;
+  height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
 }
 
 .header-dropdown {
@@ -10324,17 +10330,15 @@ button.swiper-pagination-bullet {
   margin-left: .6rem;
 }
 
-@media screen and (min-width: 992px) {
-  .product-grid .product-details {
-    height: 260px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
+.product-grid .product-details {
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .product-grid .product__compo-price {
@@ -13035,6 +13039,10 @@ a:focus {
   border-radius: 0;
 }
 
+.card-body--auto {
+  min-height: auto;
+}
+
 .card-body a {
   text-decoration: underline;
 }
@@ -13042,6 +13050,52 @@ a:focus {
 .card-body h4 {
   margin-bottom: .7rem;
   color: #8a8a8a;
+}
+
+.accordion {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion__title {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.accordion__title::before {
+  content: "+";
+  font-size: 1.4em;
+  line-height: 1;
+  margin-right: 5px;
+  width: 12px;
+  text-align: center;
+  display: inline-block;
+}
+
+.accordion__title.is-expanded {
+  background: #f2f2f2;
+}
+
+.accordion__title.is-expanded::before {
+  content: "-";
+}
+
+.accordion__child {
+  display: none;
+  padding-left: 20px;
+}
+
+.accordion__child > li {
+  margin-top: 10px;
+}
+
+.accordion__child > li > a {
+  text-decoration: none;
+  display: block;
+}
+
+.accordion__child > li > a:hover {
+  color: #eb242a;
 }
 
 .modal form {

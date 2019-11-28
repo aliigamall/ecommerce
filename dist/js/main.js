@@ -48,7 +48,7 @@
 
       /* Call function if Owl Carousel plugin is included */
       if ($.fn.owlCarousel) {
-        this.owlCarousels();
+       // this.owlCarousels();
       }
 
       /* Call function if noUiSlider plugin is included - for category pages */
@@ -198,7 +198,7 @@
       $(".compare-panel__remove").on("click", function(){
         $(this).parents('.compare-panel__item').remove();
         if($(".compare-panel__item").length === 0 )
-          $(".compare-panel").hide();
+          $(".compare-panel").removeClass('is-shown');
       });
     },
     showAutoComplete: function(){
@@ -769,7 +769,7 @@
     if($(".product-list").length > 0){
       var swiper = new Swiper('.product-list', {
         slidesPerView: 1,
-        spaceBetween: 10,
+        
         navigation: {
           nextEl: '.product-list .swiper-button-next',
           prevEl: '.product-list .swiper-button-prev',
@@ -782,11 +782,12 @@
         breakpoints: {
           // when window width is >= 320px
           320: {
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
           // when window width is >= 640px
           768: {
             slidesPerView: 3,
+            spaceBetween: 10,
           },
           992: {
             slidesPerView: 3,
@@ -794,6 +795,53 @@
           1280: {
             slidesPerView: 5,
           }
+        }
+      });
+    }
+    if($('.product-slider-wrapper').length > 0){
+      var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 9,
+        direction: 'vertical',
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+          320: {
+            direction: 'horizontal',
+          },
+          768:{
+            direction: 'vertical',
+          }
+        }
+      });
+      var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        on: {
+          init: function () {
+          var $source = $('.gallery-top .swiper-slide');
+
+          if ($.fn.elevateZoom) {
+            $source.find('img').each(function () {
+              var $this = $(this),
+                zoomConfig = {
+                  responsive: true,
+                  zoomWindowFadeIn: 350,
+                  zoomWindowFadeOut: 200,
+                  borderSize: 0,
+                  zoomContainer: $this.parent(),
+                  zoomType: 'inner',
+                  cursor: 'grab'
+                };
+                if($(window).width() >= 1280){
+                  $this.elevateZoom(zoomConfig);
+                }
+            });
+          }
+        }
+        },
+        thumbs: {
+          swiper: galleryThumbs
         }
       });
     }
@@ -891,20 +939,38 @@
       closeSideMenu();
     }
   });
-  function showSnackBar(message, time){
+  function showSnackBar(message, time, isFullWidth){
+    if(isFullWidth === true)
+      $('#snackBar').addClass('snackbar--full-width');
     $('#snackBar').addClass('snackbar--open');
+
+    (time != null || time != undefined) ? time = time : time = 5000;
     $('#snackBar .snackbar__label').text(message);
     setTimeout(() => {
       closeSnackBar();
     }, time);
   }
   function closeSnackBar(){
-    $('#snackBar').removeClass('snackbar--open');
+    $('#snackBar').removeClass('snackbar--open snackbar--full-width');
     $('#snackBar .snackbar__label').text('');
   }
   $("#btnCloseSnackBar").click(closeSnackBar);
   // example
   $("#showSnackBar").click(function(){
-    showSnackBar('تم اضافه المنتج للعربه بنجاح', '5000')
+    showSnackBar('تم اضافه المنتج للعربه بنجاح', 5000, true)
   });
+
+  $('.btn-buy-widget').on('click', function(){
+    $('.product-price-modal').addClass('is-shown');
+  });
+  $('.btn-buy-close, .product-price-modal__backdrop').on('click', function(){
+    $('.product-price-modal').removeClass('is-shown');
+  });
+
+  if ($('.accordion').length) {
+    $('.accordion__title').on('click', function(){
+      $(this).toggleClass('is-expanded');
+      $(this).parent().find('.accordion__child').eq(0).slideToggle(200);
+    });
+  }
 })(jQuery);
