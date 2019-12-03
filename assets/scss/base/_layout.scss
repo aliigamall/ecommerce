@@ -34,6 +34,12 @@
   align-items: center;
   background-color: rgba(0, 0, 0, .6);
   z-index: 1041;
+  &--absolute{
+    position: absolute;
+    align-items: baseline;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5em;
+  }
 }
 
 @include mq('xl') {

@@ -191,7 +191,18 @@
     width: 100%;
     button{
       width: 100%;
+      border: 0;
+      background: transparent;
+      &:focus{
+        outline: none;
+      }
     }
+  }
+  .dropdown-menu{
+    min-width: 130px;
+  }
+  .dropdown-item{
+    white-space: normal; 
   }
 }
 .toolbox-item {

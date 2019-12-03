@@ -758,6 +758,7 @@
   }
   .product-details{
     width: 100%;
+    height: auto;
   }
   .product {
     display: flex;
@@ -811,7 +812,9 @@
   }
   .product-list-details{
     @include mq('md'){
-      display: block;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
       padding: 15px 30px;
       border-right: .1rem solid #f4f4f4;
       ul{
@@ -819,6 +822,11 @@
         margin-bottom: 0;
         list-style-position: inside;
       }
+    }
+    .product-title{
+      font-weight: 700;
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
     }
   }
 }
