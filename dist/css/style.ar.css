@@ -11030,6 +11030,13 @@ button.swiper-pagination-bullet {
 .ratings-container .paction {
   margin: 0;
   border: 0;
+  color: #a8a8a8;
+}
+
+.ratings-container .paction:hover {
+  color: #eb242a;
+  background-color: transparent;
+  border: transparent;
 }
 
 .ratings-container .product-ratings,
@@ -14437,7 +14444,8 @@ a:focus {
 
 @media screen and (min-width: 768px) {
   .toolbox-item__item svg {
-    display: none;
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -15065,6 +15073,9 @@ a:focus {
 
 .compare-panel__item-img {
   width: 75px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 75px;
+  flex: 0 0 75px;
 }
 
 .compare-panel__item-img img {

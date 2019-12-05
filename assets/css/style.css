@@ -10576,6 +10576,13 @@ button.swiper-pagination-bullet {
 .ratings-container .paction {
   margin: 0;
   border: 0;
+  color: #a8a8a8;
+}
+
+.ratings-container .paction:hover {
+  color: #eb242a;
+  background-color: transparent;
+  border: transparent;
 }
 
 .ratings-container .product-ratings,
