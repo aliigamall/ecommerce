@@ -408,7 +408,7 @@
   .dropdown-toggle {
     display: block;
     position: relative;
-    padding: .6rem 4.4rem .4rem 1.2rem;
+    padding: .6rem 0.8rem;
     border: 1px solid transparent;
     border-radius: .2rem;
     background-color: transparent;
@@ -447,22 +447,22 @@
     }
 
     &::after {
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      right: 1.5rem;
-      width: auto;
-      height: auto;
-      margin: 0;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      transition: all .3s;
-      border: 0;
-      color: #000;
-      font-family: 'porto';
-      font-size: 1.4rem;
-      line-height: 1;
-      content: '\e81c';
+      display: none;
+      // position: absolute;
+      // top: 50%;
+      // right: 1.5rem;
+      // width: auto;
+      // height: auto;
+      // margin: 0;
+      // -webkit-transform: translateY(-50%);
+      // transform: translateY(-50%);
+      // transition: all .3s;
+      // border: 0;
+      // color: #000;
+      // font-family: 'porto';
+      // font-size: 1.4rem;
+      // line-height: 1;
+      // content: '\e81c';
     }
   }
 

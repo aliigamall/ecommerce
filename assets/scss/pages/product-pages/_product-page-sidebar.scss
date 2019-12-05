@@ -181,8 +181,10 @@
     padding: 0;
     z-index: 9999;
     background: #fff;
+    flex-direction: column;
+    justify-content: center;
     &.is-shown{
-      display: block;
+      display: flex;
     }
   }
 

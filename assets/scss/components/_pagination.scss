@@ -252,7 +252,9 @@
 .toolbox-item__item{
   svg{
     @include mq('md'){
-      display: none;
+      // display: none;
+      width: 18px;
+      height: 18px;
     }
   }
 }

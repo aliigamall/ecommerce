@@ -27,7 +27,7 @@ form {
 }
 
 .form-control {
-  max-width: 480px;
+  // max-width: 480px;
   height: 4.8rem;
   margin-bottom: 1rem;
   padding: 1.25rem 1.5rem;
@@ -40,7 +40,7 @@ form {
   font-size: $input-font-size;
   font-weight: 400;
   line-height: 1.5;
-
+  
   &:focus {
     border-color: $secondary-color;
     background-color: #fff;
@@ -63,29 +63,11 @@ select.form-control-sm:not([size]):not([multiple]) {
   height: 4.5rem;
 }
 
-.main .form-control::-webkit-input-placeholder {
-  color: $body-text;
-}
 
-.main .form-control::-moz-placeholder {
-  color: $body-text;
-}
-
-.main .form-control:-ms-input-placeholder {
-  color: $body-text;
-}
-
-.main .form-control::-ms-input-placeholder {
-  color: $body-text;
-}
-
-.main .form-control::placeholder {
-  color: $body-text;
-}
 
 textarea.form-control {
-  max-width: 680px;
-  min-height: 176px;
+  // max-width: 680px;
+  min-height: 165px;
 }
 
 .form-footer {
@@ -599,7 +581,15 @@ $color-black-54: rgba(#000, .54);
   }
 }
 
-
-.mdc-checkbox{
-
+.form-group__icon{
+  position: relative;
+  svg{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    fill: rgba(0,0,0,.54);
+  }
+  .form-control{
+    padding-left: 50px;
+  }
 }

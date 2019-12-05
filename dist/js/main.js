@@ -202,7 +202,7 @@
       });
     },
     showAutoComplete: function(){
-      $('#q').on("keyup", function(){
+      $('#q').on("focus keyup", function(){
         var inputVal = $(this).val();
         if(inputVal != ''){
           $(".search-autocomplete").show();
@@ -210,6 +210,9 @@
           $(".search-autocomplete").hide();
         }
       });
+      $('#q').on("focusout", function(){
+        $(".search-autocomplete").hide();
+      })
     },
     mobileMenu: function () {
       // Mobile Menu Toggle
@@ -914,6 +917,7 @@
     Porto.scrollBtnAppear();
   });
 
+  // side menu
   function openSideMenu() {
     $('.side-menu').addClass('side-menu--open');
     $('body').addClass('no-overflow');
@@ -934,9 +938,31 @@
     closeSideMenu();
   });
 
+  // side shopping cart
+  function openSideCart() {
+    $('.side-cart').addClass('side-cart--open');
+    $('body').addClass('no-overflow');
+  }
+  function closeSideCart() {
+    $('.side-cart').removeClass('side-cart--open');
+    $('body').removeClass('no-overflow');
+  }
+
+  $("#btnOpenCart").on('click', function () {
+    openSideCart();
+  });
+  $('.side-cart__overlay').on('click', function () {
+    closeSideCart();
+  });
+
+  $('#btnCloseCart').on('click', function () {
+    closeSideCart();
+  });
+
   $(document).on('keydown', function (event) {
     if (event.keyCode == 27) {
       closeSideMenu();
+      closeSideCart();
     }
   });
   function showSnackBar(message, time, isFullWidth){

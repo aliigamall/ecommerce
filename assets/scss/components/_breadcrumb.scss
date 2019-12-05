@@ -39,9 +39,14 @@
 
 .breadcrumb-item a,
 .breadcrumb-item.active {
-  color: #8e8e8e;
+  color: #000;
 }
 .breadcrumb-item.active {
   font-weight: 700;
-  color: #000;
+}
+.breadcrumb-wrapper{
+  @include mq('md'){
+    display: flex;
+    justify-content: space-between;
+  }
 }

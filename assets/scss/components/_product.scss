@@ -269,7 +269,7 @@
   height: 34px;
   transition: all .3s;
   border: 1px solid #d8d8d6;
-  background-color: #f4f4f4;
+  background-color: #fff;
   color: #000;
   font-family: 'porto';
   font-size: 1.8rem;
@@ -401,7 +401,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f4f4f4;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
   .paction{
     margin: 0;
     border: 0;
@@ -978,14 +979,16 @@
 }
 .gallery-top{
   height: 550px;
+  box-shadow: 0 0 13px 1px rgba(0, 0, 0, 0.04);
 }
 .gallery-thumbs{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
     z-index: 10;
     display: flex;
     width: 40px;
+    flex: 0 0 40px;
     @include mq('lg', 'max'){
       width: 100%;
       justify-content: center;

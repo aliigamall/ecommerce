@@ -228,8 +228,9 @@
   }
 }
 .product-slider-wrapper{
+  display: flex;
   position: relative;
-  box-shadow: 0 0 13px 1px rgba(0, 0, 0, 0.04);
+  // box-shadow: 0 0 13px 1px rgba(0, 0, 0, 0.04);
   .product-item{
     width: 530px;
     height: 530px;

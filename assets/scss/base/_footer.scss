@@ -28,6 +28,10 @@
   .contact-info {
     margin-bottom: 0;
     padding: 0;
+    @include mq('md', 'max'){
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -213,6 +217,13 @@
   margin-bottom: 1.2rem;
   margin-left: auto;
   font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  img{
+    margin-left: 15px;
+    max-height: 30px;
+    max-width: 100px;
+  }
 }
 
 .footer-payments {
@@ -240,6 +251,9 @@
   opacity: 0;
   visibility: hidden;
   z-index: 9999;
+  @include mq('md', 'max'){
+    display: none;
+  }
 }
 
 #scroll-top:hover,

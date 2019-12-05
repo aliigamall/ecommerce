@@ -264,14 +264,20 @@ $menu-item-height: 48px !default;
       color: $primary-color;
     }
   }
-
+  > li.special{
+    &:hover{
+      > a{
+        border-top-color: $primary-color;
+      }
+    }
+  }
   > li:hover,
   > li.show,
   > li.active {
     > a {
       background-color: #fff;
       color: $primary-color;
-      border-top-color: $primary-color;
+      border-top-color: #333;
       transition: all .3s ease-in-out;
     }
 
