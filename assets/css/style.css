@@ -7625,11 +7625,19 @@ a:focus {
 .cart-dropdown .product-image-container {
   position: relative;
   max-width: 80px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80px;
+  flex: 0 0 80px;
   margin: 0;
   margin-left: auto;
   border: 1px solid #ededed;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
+}
+
+.cart-dropdown .product-image-container img {
+  width: 80px;
+  height: 80px;
 }
 
 .cart-dropdown .product-image-container a::after {
@@ -10461,7 +10469,7 @@ button.swiper-pagination-bullet {
   height: auto;
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
-  color: #000;
+  color: #6c6c6c;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -10487,22 +10495,36 @@ button.swiper-pagination-bullet {
   font-weight: 700;
 }
 
-.add-cart:hover, .add-cart:focus,
+.add-cart:hover, .add-cart:focus, .add-cart.is-selected,
 .add-compare:hover,
 .add-compare:focus,
+.add-compare.is-selected,
 .add-wishlist:hover,
-.add-wishlist:focus {
+.add-wishlist:focus,
+.add-wishlist.is-selected {
   border-color: #282d3b;
   background-color: #282d3b;
   color: #fff;
 }
 
+.add-cart:hover:before, .add-cart:focus:before, .add-cart.is-selected:before,
+.add-compare:hover:before,
+.add-compare:focus:before,
+.add-compare.is-selected:before,
+.add-wishlist:hover:before,
+.add-wishlist:focus:before,
+.add-wishlist.is-selected:before {
+  color: #eb242a;
+}
+
 .add-wishlist::before {
-  content: '\e889';
+  color: #9d9d9d;
+  content: '\e811';
 }
 
 .add-compare::before {
-  content: '\e88f';
+  color: #9d9d9d;
+  content: '\e810';
 }
 
 .product:hover .paction.add-wishlist, .product:hover .paction.add-compare,
@@ -10579,7 +10601,7 @@ button.swiper-pagination-bullet {
   color: #a8a8a8;
 }
 
-.ratings-container .paction:hover {
+.ratings-container .paction:hover, .ratings-container .paction.is-selected {
   color: #eb242a;
   background-color: transparent;
   border: transparent;
@@ -11242,6 +11264,19 @@ button.swiper-pagination-bullet {
 .gallery-thumbs .swiper-slide.swiper-slide-thumb-active {
   border: 1px solid #eb242a;
   opacity: 1;
+}
+
+.cart__empty-state img {
+  max-width: 100%;
+}
+
+.cart__empty-state span {
+  color: #8f8f8f;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .banner {
@@ -16297,6 +16332,7 @@ a:focus {
 
 .product-single-details .ratings-container {
   margin-bottom: 2.1rem;
+  border: 0;
 }
 
 .product-single-details .ratings-container .product-ratings,
