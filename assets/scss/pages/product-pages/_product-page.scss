@@ -230,8 +230,11 @@
   }
 }
 .product-slider-wrapper{
-  display: flex;
-  position: relative;
+  @include mq('lg'){
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+  }
   // box-shadow: 0 0 13px 1px rgba(0, 0, 0, 0.04);
   .product-item{
     width: 530px;
