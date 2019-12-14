@@ -24,10 +24,11 @@
 .compare-panel__close{
     position: absolute;
     top: 0;
-    left: 5vw;
+    right: 5vw;
     background: $primary-color;
     transform: translate(0px, -100%);
     color: #fff;
+    border: 1px solid;
     padding: 0.4em 1.8em;
     cursor: pointer;
     &:hover,

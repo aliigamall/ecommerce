@@ -3,6 +3,12 @@
   border: 1px solid #ddd;
   border-radius: 0;
   font-size: $font-size;
+  a{
+    text-decoration: none;
+    &:hover{
+      color: $primary-color;
+    }
+  }
 }
 
 .card-header {
@@ -50,6 +56,13 @@
 .accordion{
   margin: 0;
   padding: 0;
+  a{
+    text-decoration: none;
+    display: block;
+    &:hover{
+      color: $primary-color;
+    }
+  }
 }
 .accordion__title{
   cursor: pointer;
@@ -75,12 +88,6 @@
   padding-left: 20px;
    li{
     margin-top: 10px;
-     a{
-      text-decoration: none;
-      display: block;
-      &:hover{
-        color: $primary-color;
-      }
-    }
+     
   }
 }

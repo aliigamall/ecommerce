@@ -251,11 +251,10 @@
 }
 .toolbox-item__item{
   svg{
-    @include mq('md'){
       // display: none;
-      width: 18px;
-      height: 18px;
-    }
+      width: 24px;
+      height: 24px;
+      margin-right: 5px;
   }
 }
 .sorter-btn {
