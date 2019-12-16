@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0  user-scalable=no” shrink-to-fit=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1.0  user-scalable=no” shrink-to-fit=no">
 
     <title>Amyz - traiding company</title>
 
@@ -20,12 +21,9 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <!-- Main CSS File -->
+    <!-- <link rel="stylesheet" href="assets/css/datatables.min.css"> -->
     <link rel="stylesheet" href="assets/css/style.ar.css">
-    <style>
-        .product-single-gallery {
-            direction: ltr;
-        }
-    </style>
+
 </head>
 
 <body>
@@ -955,179 +953,431 @@
             </div>
         </header><!-- End .header -->
 
-       <main class="main">
-           <div class="container">
-               <div class="price-container" id="priceContainer">
-                       <div class="price__table--fixed">
-                           <div class="container">
-                               <div class="price__table">
-                                   <table>
-                                       <thead>
-                                           <tr>
-                                               <th>
-                                                   <h2 id="comparePlanCell">المقارنة</h2>
-                                               </th>
-                                               <th class="pricing__plan-cell">
-                                                   <div class="pricing__title">آي فون x</div>
-                                               </th>
-                                               <th class="pricing__plan-cell">
-                                                   <div class="pricing__title">آي فون xs</div>
-                                               </th>
-                                               <th class="pricing__plan-cell">
-                                                   <div class="pricing__title">آي فون xs max</div>
-                                               </th>
-                                           </tr>
-                                       </thead>
-                                   </table>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="price__table" id="priceTabl">
-                           <table>
-                               <thead>
-                                   <tr>
-                                       <th>
-                                           <h2>المقارنة</h2>
-                                       </th>
-                                       <th class="pricing__plan-cell">
-                                         
-                                           <div class="pricing__title">آي فون x</div>
-                                       </th>
-                                       <th class="pricing__plan-cell">
-                                           
-                                           <div class="pricing__title">آي فون xs</div>
-                                       </th>
-                                       <th class="pricing__plan-cell">
-                                          
-                                           <div class="pricing__title">آي فون xs max</div>
-                                       </th>
-                                   </tr>
-                               </thead>
-                               <tbody>
-                                   <tr>
-                                       <td>
-                                           <h3>المجموعة الاولي</h3>
-                                       </td>
-                                       <td class="pricing__table-basic"></td>
-                                       <td class="pricing__table-pro"></td>
-                                       <td class="pricing__table-ultimate"></td>
-                                   </tr>
-                                   <tr>
-                                       <td>خاصية المقارنة</td>
-                                       <td class="pricing__table-basic"><svg class="pricing__cancel">
-                                        <use xlink:href="./assets/images/svg-icons.svg#icon-cancel"></use>
-                                    </svg></td>
-                                       <td class="pricing__table-pro"><svg>
-                                               <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                           </svg></td>
-                                       <td class="pricing__table-ultimate"><svg>
-                                               <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                           </svg></td>
-                                   </tr>
-                                   <tr>
-                                       <td>خاصية المقارنة</td>
-                                       <td class="pricing__table-basic"><svg class="pricing__cancel">
-                                        <use xlink:href="./assets/images/svg-icons.svg#icon-cancel"></use>
-                                    </svg></td>
-                                       <td class="pricing__table-pro"><svg>
-                                               <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                           </svg></td>
-                                       <td class="pricing__table-ultimate"><svg>
-                                               <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                           </svg></td>
-                                   </tr>
-                                   <tr>
-                                       <td>خاصية المقارنة</td>
-                                       <td class="pricing__table-basic"><svg class="pricing__cancel">
-                                        <use xlink:href="./assets/images/svg-icons.svg#icon-cancel"></use>
-                                    </svg></td>
-                                       <td class="pricing__table-pro"><svg>
-                                               <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                           </svg></td>
-                                       <td class="pricing__table-ultimate"><svg>
-                                               <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                           </svg></td>
-                                   </tr>
-                                   <tr>
-                                       <td>خاصية المقارنة</td>
-                                       <td class="pricing__table-basic"><svg class="pricing__cancel">
-                                               <use xlink:href="./assets/images/svg-icons.svg#icon-cancel"></use>
-                                           </svg></td>
-                                       <td class="pricing__table-pro"><svg>
-                                               <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                           </svg></td>
-                                       <td class="pricing__table-ultimate"><svg>
-                                               <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                           </svg></td>
-                                   </tr>
-                                  
-                                   <tr>
-                                       <td colspan="5" class="pricing__table-sep"></td>
-                                   </tr>
-                                   <tr>
-                                    <td>
-                                        <h3>المجموعة الثانية</h3>
-                                    </td>
-                                    <td class="pricing__table-basic"></td>
-                                    <td class="pricing__table-pro"></td>
-                                    <td class="pricing__table-ultimate"></td>
-                                </tr>
-                                <tr>
-                                    <td>خاصية المقارنة</td>
-                                    <td class="pricing__table-basic"><svg class="pricing__cancel">
-                                     <use xlink:href="./assets/images/svg-icons.svg#icon-cancel"></use>
-                                 </svg></td>
-                                    <td class="pricing__table-pro"><svg>
-                                            <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                        </svg></td>
-                                    <td class="pricing__table-ultimate"><svg>
-                                            <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                        </svg></td>
-                                </tr>
-                                <tr>
-                                    <td>خاصية المقارنة</td>
-                                    <td class="pricing__table-basic"><svg class="pricing__cancel">
-                                     <use xlink:href="./assets/images/svg-icons.svg#icon-cancel"></use>
-                                 </svg></td>
-                                    <td class="pricing__table-pro"><svg>
-                                            <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                        </svg></td>
-                                    <td class="pricing__table-ultimate"><svg>
-                                            <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                        </svg></td>
-                                </tr>
-                                <tr>
-                                    <td>خاصية المقارنة</td>
-                                    <td class="pricing__table-basic"><svg class="pricing__cancel">
-                                     <use xlink:href="./assets/images/svg-icons.svg#icon-cancel"></use>
-                                 </svg></td>
-                                    <td class="pricing__table-pro"><svg>
-                                            <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                        </svg></td>
-                                    <td class="pricing__table-ultimate"><svg>
-                                            <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                        </svg></td>
-                                </tr>
-                                <tr>
-                                    <td>خاصية المقارنة</td>
-                                    <td class="pricing__table-basic"><svg class="pricing__cancel">
-                                            <use xlink:href="./assets/images/svg-icons.svg#icon-cancel"></use>
-                                        </svg></td>
-                                    <td class="pricing__table-pro"><svg>
-                                            <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                        </svg></td>
-                                    <td class="pricing__table-ultimate"><svg>
-                                            <use xlink:href="./assets/images/svg-icons.svg#icon-check"></use>
-                                        </svg></td>
-                                </tr>
-                                  
-   
-                               </tbody>
-                           </table>
-                       </div>
-                   </div>
-           </div>
-       </main>
+        <main class="main">
+            <div class="container">
+                <header class="cd-products-comparison-table__header mt-5">
+                    <h2 class="carousel-title"><span>جدول المقارنة</span></h2>
+                </header>
+                <div class="price__table" id="priceContainer">
+                    <ul class="price__table-navigation">
+                        <li><button class="action prv" id="btnComparePrev"></button></li>
+                        <li><button class="action nxt" id="btnCompareNext"></button></li>
+                    </ul>
+                    <table id="compareTable">
+                        <thead>
+                            <tr>
+                                <th>المقارنة</th>
+                                <th>
+                                    <img src="./assets/images/item_XL_4967274_1614220.jpg" alt="product image">
+                                    آي فون X</th>
+                                <th>
+                                    <img src="./assets/images/item_XL_4967274_1614220.jpg" alt="product image">
+                                    آي فون XS</th>
+                                <th>
+                                    <img src="./assets/images/item_XL_4967274_1614220.jpg" alt="product image">
+                                    آي فون XS MAX</th>
+                                <th>
+                                    <img src="./assets/images/item_XL_4967274_1614220.jpg" alt="product image">
+                                    آي فون X</th>
+                                <th>
+                                    <img src="./assets/images/item_XL_4967274_1614220.jpg" alt="product image">
+                                    آي فون XS</th>
+                                <th>
+                                    <img src="./assets/images/item_XL_4967274_1614220.jpg" alt="product image">
+                                    آي فون XS MAX</th>
+                                <th>
+                                    <img src="./assets/images/item_XL_4967274_1614220.jpg" alt="product image">
+                                    آي فون X</th>
+                                <th>
+                                    <img src="./assets/images/item_XL_4967274_1614220.jpg" alt="product image">
+                                    آي فون XS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                            <tr>
+                                <td class="price-table__main-cell">خاصية المقارنة</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Nixon</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    Edinburgh</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    61</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    2011/04/25</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    $320,800</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    5421</td>
+                                <td> 
+                                    <span class="price-table__mobile-cell">خاصية المقارنة</span>
+                                    t.nixon@datatables.net</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
 
         <footer class="footer">
             <div class="footer-middle">
@@ -1347,102 +1597,134 @@
 
     <a id="scroll-top" href="#top" title="Top" role="button"><i class="icon-angle-up"></i></a>
     <div class="product-price-modal">
-            <div class="product-price-modal__backdrop"></div>
-            <div class="widget product-price-widget">
-                    <div class="mb-2 row">
-                        <div class="col-2">
-                            <h4 class="product-price-widget__title mt-1">الكميه</h4>
-                        </div>
-                        <div class="col">
-                            <input class="vertical-quantity form-control" type="text">
-                        </div>
-                    </div>
-                    <h4 class="product-price-widget__title">السعر كاش</h4>
-                    <div class="product-price__panel">
-                        <div class="product-price__select">
-                            <div class="mdc-radio">
-                                <input id="rb1" type="radio" name="productOptions" checked="checked" />
-                                <label for="rb1">
-                                    <strong>٢٢٩٠ جنيه</strong>
-                                    <span>٣٠٠٠ جنيه</span>
-                                </label>
-                            </div>
-                            <div class="product__padge">
-                                بدون فوائد
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="product-price-widget__title">أو قسط</h4>
-                    <div class="product-price__panel">
-                        <div class="product-price__installement">
-                            المقدم
-                            <input type="text" />
-                            جنيه
-                        </div>
-                        <div class="product-price__select">
-                            <div class="mdc-radio">
-                                <input id="rb2" type="radio" name="productOptions" />
-                                <label for="rb2">
-                                    <strong>٢٢٩٠ جنيه</strong>
-                                    <span>٣٠٠٠ جنيه</span>
-                                </label>
-                            </div>
-                            <div class="product__padge product__padge--orange">
-                                بدون فوائد
-                            </div>
-                        </div>
-                        <div class="product-price__select">
-                            <div class="mdc-radio">
-                                <input id="rb3" type="radio" name="productOptions" />
-                                <label for="rb3">
-                                    <strong>٢٢٩٠ جنيه</strong>
-                                    <span>٣٠٠٠ جنيه</span>
-                                </label>
-                            </div>
-                            <div class="product__padge product__padge--orange">
-                                بدون فوائد
-                            </div>
-                        </div>
-                        <div class="product-price__select">
-                            <div class="mdc-radio">
-                                <input id="rb4" type="radio" name="productOptions" />
-                                <label for="rb4">
-                                    <strong>٢٢٩٠ جنيه</strong>
-                                    <span>٣٠٠٠ جنيه</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="product-price__select">
-                            <div class="mdc-radio">
-                                <input id="rb5" type="radio" name="productOptions" />
-                                <label for="rb5">
-                                    <strong>٢٢٩٠ جنيه</strong>
-                                    <span>٣٠٠٠ جنيه</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn-block btn-primary">اشتري الان</button>
-                    <button class="btn-buy-close btn btn-block btn-light">إغلاق</button>
+        <div class="product-price-modal__backdrop"></div>
+        <div class="widget product-price-widget">
+            <div class="mb-2 row">
+                <div class="col-2">
+                    <h4 class="product-price-widget__title mt-1">الكميه</h4>
                 </div>
+                <div class="col">
+                    <input class="vertical-quantity form-control" type="text">
+                </div>
+            </div>
+            <h4 class="product-price-widget__title">السعر كاش</h4>
+            <div class="product-price__panel">
+                <div class="product-price__select">
+                    <div class="mdc-radio">
+                        <input id="rb1" type="radio" name="productOptions" checked="checked" />
+                        <label for="rb1">
+                            <strong>٢٢٩٠ جنيه</strong>
+                            <span>٣٠٠٠ جنيه</span>
+                        </label>
+                    </div>
+                    <div class="product__padge">
+                        بدون فوائد
+                    </div>
+                </div>
+            </div>
+            <h4 class="product-price-widget__title">أو قسط</h4>
+            <div class="product-price__panel">
+                <div class="product-price__installement">
+                    المقدم
+                    <input type="text" />
+                    جنيه
+                </div>
+                <div class="product-price__select">
+                    <div class="mdc-radio">
+                        <input id="rb2" type="radio" name="productOptions" />
+                        <label for="rb2">
+                            <strong>٢٢٩٠ جنيه</strong>
+                            <span>٣٠٠٠ جنيه</span>
+                        </label>
+                    </div>
+                    <div class="product__padge product__padge--orange">
+                        بدون فوائد
+                    </div>
+                </div>
+                <div class="product-price__select">
+                    <div class="mdc-radio">
+                        <input id="rb3" type="radio" name="productOptions" />
+                        <label for="rb3">
+                            <strong>٢٢٩٠ جنيه</strong>
+                            <span>٣٠٠٠ جنيه</span>
+                        </label>
+                    </div>
+                    <div class="product__padge product__padge--orange">
+                        بدون فوائد
+                    </div>
+                </div>
+                <div class="product-price__select">
+                    <div class="mdc-radio">
+                        <input id="rb4" type="radio" name="productOptions" />
+                        <label for="rb4">
+                            <strong>٢٢٩٠ جنيه</strong>
+                            <span>٣٠٠٠ جنيه</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="product-price__select">
+                    <div class="mdc-radio">
+                        <input id="rb5" type="radio" name="productOptions" />
+                        <label for="rb5">
+                            <strong>٢٢٩٠ جنيه</strong>
+                            <span>٣٠٠٠ جنيه</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-block btn-primary">اشتري الان</button>
+            <button class="btn-buy-close btn btn-block btn-light">إغلاق</button>
         </div>
+    </div>
     <!-- Plugins JS File -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/dataTables.fixedColumns.min.js"></script>
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
-        $(function(){
-            var tableOffset = $('#priceTabl').offset().top;
-            $(window).on('scroll', function () {
-                if ($(this).scrollTop() > tableOffset) {
-                    $('.price__table--fixed').addClass('is-shown');
-                } else {
-                    $('.price__table--fixed').removeClass('is-shown');
-                }
-            })
+        $(function () {
+            var tableOffset = '';
+            // var tableOffset = $('#priceTabl').offset().top;
+            // $(window).on('scroll', function () {
+            //     if ($(this).scrollTop() > tableOffset) {
+            //         $('.price__table--fixed').addClass('is-shown');
+            //     } else {
+            //         $('.price__table--fixed').removeClass('is-shown');
+            //     }
+            // })
+            if($(window).width() > 992){
+                var table = $('#compareTable').DataTable({
+                    scrollY: "70vh",
+                    scrollX: true,
+                    scrollCollapse: true,
+                    responsive: true,
+                    paging: false,
+                    // fixedHeader: true,
+                    searching: false,
+                    ordering: false,
+                    paging: false,
+                    fixedColumns: {
+                        leftColumns: 1,
+                        // rightColumns: 1
+                    },
+                    "initComplete": function () {
+                        $("#btnCompareNext").click(function () {
+                            var scrollVal = $(".dataTables_scrollBody").scrollLeft();
+                            scrollVal -= 300;
+                            $(".dataTables_scrollBody").stop(true, true).animate({ scrollLeft: scrollVal }, 250);
+                        });
+                        $("#btnComparePrev").click(function () {
+                            var scrollVal = $(".dataTables_scrollBody").scrollLeft();
+                            scrollVal += 300;
+                            $(".dataTables_scrollBody").stop(true, true).animate({ scrollLeft: scrollVal }, 250);
+                        });
+                    }
+                });
+            }
         })
     </script>
 </body>
