@@ -15197,7 +15197,7 @@ a:focus {
 }
 
 .price__table table td {
-  padding: 1em;
+  padding: 8px 1em;
   background-color: #fdfdfd;
 }
 
@@ -15366,7 +15366,7 @@ a:focus {
 }
 
 .price__table th {
-  padding: 20px 40px;
+  padding: 10px 40px;
   color: #000;
   font-size: 16px;
   font-weight: 700;
@@ -15376,15 +15376,27 @@ a:focus {
   vertical-align: bottom;
 }
 
+@media screen and (min-width: 992px) {
+  .price__table th {
+    padding: 20px 40px;
+  }
+}
+
 .price__table th:first-child {
   background-color: #f1f1f1;
   border-left-width: 1px;
 }
 
 .price__table th img {
-  max-width: 100px;
+  max-width: 50px;
   display: block;
   margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .price__table th img {
+    max-width: 100px;
+  }
 }
 
 .price__table td {
@@ -15463,6 +15475,13 @@ a:focus {
   display: block;
   font-size: .8em;
   color: #000;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.price-table__mobile-cell.is-visible {
+  opacity: 1;
 }
 
 @media screen and (min-width: 992px) {

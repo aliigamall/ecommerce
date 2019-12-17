@@ -443,7 +443,7 @@
       // margin-top: 100px;
       width: 100%;
       td {
-        padding: 1em;
+        padding: 8px 1em;
         background-color: #fdfdfd;
         > svg {
           width: 24px;
@@ -587,7 +587,7 @@
         border-left: 0;
       }
       th{
-        padding: 20px 40px;
+        padding: 10px 40px;
         color: #000;
         font-size: 16px;
         font-weight: 700;
@@ -595,14 +595,20 @@
         min-width: 150px;
         text-align: center;
         vertical-align: bottom;
+        @include mq('lg'){
+          padding: 20px 40px;
+        }
         &:first-child{
           background-color: #f1f1f1;
           border-left-width: 1px;
         }
         img{
-          max-width: 100px;
+          max-width: 50px;
           display: block;
           margin: auto;
+          @include mq('lg'){
+            max-width: 100px;  
+          }
         }
       }
       // .odd{
@@ -670,6 +676,11 @@
     display: block;
     font-size: .8em;
     color: #000;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    &.is-visible{
+      opacity: 1;
+    }
    @include mq('lg'){
      display: none;
    }

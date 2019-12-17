@@ -26,33 +26,48 @@
             //         $('.price__table--fixed').removeClass('is-shown');
             //     }
             // })
+            var tableHeight;
             if($(window).width() > 992){
-                var table = $('#compareTable').DataTable({
-                    scrollY: "70vh",
-                    scrollX: true,
-                    scrollCollapse: true,
-                    responsive: true,
-                    paging: false,
-                    // fixedHeader: true,
-                    searching: false,
-                    ordering: false,
-                    paging: false,
-                    fixedColumns: {
-                        leftColumns: 1,
-                        // rightColumns: 1
-                    },
-                    "initComplete": function () {
-                        $("#btnCompareNext").click(function () {
-                            var scrollVal = $(".dataTables_scrollBody").scrollLeft();
-                            scrollVal -= 300;
-                            $(".dataTables_scrollBody").stop(true, true).animate({ scrollLeft: scrollVal }, 250);
-                        });
-                        $("#btnComparePrev").click(function () {
-                            var scrollVal = $(".dataTables_scrollBody").scrollLeft();
-                            scrollVal += 300;
-                            $(".dataTables_scrollBody").stop(true, true).animate({ scrollLeft: scrollVal }, 250);
-                        });
-                    }
-                });
+                tableHeight = "70vh";
+                freezColumn = 1;
+            } else{
+                tableHeight = "50vh";
+                freezColumn = 0;
             }
+            var table = $('#compareTable').DataTable({
+                scrollY: tableHeight,
+                scrollX: true,
+                scrollCollapse: true,
+                responsive: true,
+                paging: false,
+                // fixedHeader: true,
+                searching: false,
+                ordering: false,
+                paging: false,
+                fixedColumns: {
+                    leftColumns: freezColumn,
+                    // rightColumns: 1
+                },
+                "initComplete": function () {
+                    var tableMaxScrollLeft = $("#compareTable").width() - $(".dataTables_scrollBody").width();
+                    var compareCellWidth = $(".price-table__main-cell").outerWidth();
+                    $("#btnCompareNext").click(function () {
+                        var scrollVal = $(".dataTables_scrollBody").scrollLeft();
+                        scrollVal -= 300;
+                        $(".dataTables_scrollBody").stop(true, true).animate({ scrollLeft: scrollVal }, 250);
+                    });
+                    $("#btnComparePrev").click(function () {
+                        var scrollVal = $(".dataTables_scrollBody").scrollLeft();
+                        scrollVal += 300;
+                        $(".dataTables_scrollBody").stop(true, true).animate({ scrollLeft: scrollVal }, 250);
+                    });
+                    $(".dataTables_scrollBody").on('scroll', function () {
+                        if ( $(".dataTables_scrollBody").scrollLeft() <= tableMaxScrollLeft - compareCellWidth ) {
+                            $('.price-table__mobile-cell').addClass('is-visible');
+                        } else{
+                            $('.price-table__mobile-cell').removeClass('is-visible');
+                        }
+                    })
+                }
+            });
         })</script></body></html>
