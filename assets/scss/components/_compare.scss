@@ -685,3 +685,54 @@
      display: none;
    }
  }
+ .price__table--static{
+  .price__table--fixed.is-shown{
+    @include mq('lg', 'max'){
+      display: none;
+    }
+  }
+   table{
+     th, td{
+      border: 1px solid #e6e6e6;
+     }
+     th{
+      width: 20%;
+      min-width: 190px;
+       &:first-child{
+         width: auto;
+         text-align: left;
+         @include mq('lg', 'max'){
+           display: none;
+         }
+       }
+     }
+   }
+   td{
+    white-space: normal;
+    @include mq('lg', 'max'){
+      vertical-align: top;
+    }
+    &:first-child{
+      background-color: #f1f1f1;
+      @include mq('lg', 'max'){
+        display: none;
+      }
+    }
+   }
+   .price__table--fixed{
+     table{
+       th{
+        padding: 10px;
+        font-size: 12px;
+        img{
+          max-width: 60px;
+        }
+       }
+     }
+   }
+   .price-table__mobile-cell{
+    @include mq('lg', 'max'){
+      opacity: 1;
+    }
+   }
+ }

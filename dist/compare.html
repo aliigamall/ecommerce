@@ -51,6 +51,7 @@
                 "initComplete": function () {
                     var tableMaxScrollLeft = $("#compareTable").width() - $(".dataTables_scrollBody").width();
                     var compareCellWidth = $(".price-table__main-cell").outerWidth();
+                    // manaul scroll buttons
                     $("#btnCompareNext").click(function () {
                         var scrollVal = $(".dataTables_scrollBody").scrollLeft();
                         scrollVal -= 300;
@@ -61,13 +62,27 @@
                         scrollVal += 300;
                         $(".dataTables_scrollBody").stop(true, true).animate({ scrollLeft: scrollVal }, 250);
                     });
-                    $(".dataTables_scrollBody").on('scroll', function () {
-                        if ( $(".dataTables_scrollBody").scrollLeft() <= tableMaxScrollLeft - compareCellWidth ) {
-                            $('.price-table__mobile-cell').addClass('is-visible');
-                        } else{
-                            $('.price-table__mobile-cell').removeClass('is-visible');
-                        }
-                    })
+                    // detect if sceoll left greater than compare cell in rtl
+                    if($("html").attr("dir") == "rtl"){
+                        $(".dataTables_scrollBody").on('scroll', function () {
+                            if ( $(".dataTables_scrollBody").scrollLeft() <= tableMaxScrollLeft - compareCellWidth ) {
+                                $('.price-table__mobile-cell').addClass('is-visible');
+                            } else{
+                                $('.price-table__mobile-cell').removeClass('is-visible');
+                            }
+                        })
+                    }
+
+                    // detect if sceoll left greater than compare cell in ltr
+                    if($("html").attr("dir") == "ltr"){
+                        $(".dataTables_scrollBody").on('scroll', function () {
+                            if ( $(".dataTables_scrollBody").scrollLeft() >= compareCellWidth ) {
+                                $('.price-table__mobile-cell').addClass('is-visible');
+                            } else{
+                                $('.price-table__mobile-cell').removeClass('is-visible');
+                            }
+                        })
+                    }
                 }
             });
         })</script></body></html>
