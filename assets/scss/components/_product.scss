@@ -850,7 +850,7 @@
 .product-price__panel{
   border: 1px solid #ccc;
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   .product__padge{
     border-radius: 3px;
     padding: 4px 6px;
@@ -861,6 +861,16 @@
   }
   &.is-checked{
     border-color: #555;
+  }
+}
+.product-price__panel-qty{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  .bootstrap-touchspin .form-control{
+    padding: 0;
+    height: 3.5rem;
   }
 }
 .product-price__select{
@@ -1078,4 +1088,8 @@
     margin-bottom: 20px;
     font-size: 16px;
   }
+}
+
+.col.no-gutters{
+  padding: 0;
 }

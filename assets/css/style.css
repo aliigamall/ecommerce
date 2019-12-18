@@ -11032,7 +11032,7 @@ button.swiper-pagination-bullet {
 .product-price__panel {
   border: 1px solid #ccc;
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .product-price__panel .product__padge {
@@ -11047,6 +11047,24 @@ button.swiper-pagination-bullet {
 
 .product-price__panel.is-checked {
   border-color: #555;
+}
+
+.product-price__panel-qty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-price__panel-qty .bootstrap-touchspin .form-control {
+  padding: 0;
+  height: 3.5rem;
 }
 
 .product-price__select {
@@ -11349,6 +11367,10 @@ button.swiper-pagination-bullet {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 16px;
+}
+
+.col.no-gutters {
+  padding: 0;
 }
 
 .banner {
@@ -15215,10 +15237,6 @@ a:focus {
 
 .price__table table td span {
   color: #6b6b6b;
-}
-
-.price__table table th:first-child {
-  width: 45%;
 }
 
 .price__table .pricing__title {
