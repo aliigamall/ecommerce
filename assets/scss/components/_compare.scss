@@ -696,10 +696,11 @@
       border: 1px solid #e6e6e6;
      }
      th{
-      width: 20%;
+      // width: 20%;
+      white-space: normal;
       min-width: 190px;
        &:first-child{
-         width: auto;
+        width: 20%;
          text-align: left;
          @include mq('lg', 'max'){
            display: none;
@@ -709,11 +710,13 @@
    }
    td{
     white-space: normal;
+    width: 20%;
     @include mq('lg', 'max'){
       vertical-align: top;
     }
     &:first-child{
       background-color: #f1f1f1;
+      width: 20%;
       @include mq('lg', 'max'){
         display: none;
       }
