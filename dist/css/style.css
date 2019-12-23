@@ -15519,12 +15519,12 @@ a:focus {
 }
 
 .price__table--static table th {
-  width: 20%;
+  white-space: normal;
   min-width: 190px;
 }
 
 .price__table--static table th:first-child {
-  width: auto;
+  width: 20%;
   text-align: left;
 }
 
@@ -15536,6 +15536,7 @@ a:focus {
 
 .price__table--static td {
   white-space: normal;
+  width: 20%;
 }
 
 @media screen and (max-width: 991px) {
@@ -15546,6 +15547,7 @@ a:focus {
 
 .price__table--static td:first-child {
   background-color: #f1f1f1;
+  width: 20%;
 }
 
 @media screen and (max-width: 991px) {
