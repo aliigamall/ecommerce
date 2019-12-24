@@ -252,6 +252,9 @@
 .sidebar {
   position: relative;
   font-size: $sidebar-font-size;
+  @include mq('lg'){
+    padding-right: 15px !important;
+  }
 
   .widget {
     margin-bottom: 3rem;

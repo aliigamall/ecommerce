@@ -20053,6 +20053,12 @@ tbody .product-col {
   font-size: 1.4rem;
 }
 
+@media screen and (min-width: 992px) {
+  .sidebar {
+    padding-right: 15px !important;
+  }
+}
+
 .sidebar .widget {
   margin-bottom: 3rem;
 }
@@ -20376,6 +20382,26 @@ tbody .product-col {
 
 .widget-dashboard {
   margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+  .widget-dashboard {
+    padding-right: 15px;
+    border-right: 1px solid #eb242a;
+  }
+}
+
+.widget-dashboard .list li:hover a, .widget-dashboard .list li.active a {
+  background-color: #eb242a;
+  color: #fff;
+}
+
+.widget-dashboard .list li a {
+  padding: .9rem;
+}
+
+.widget-dashboard .list li a::before {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
