@@ -1024,4 +1024,8 @@
       $(".product-price__panel").removeClass('is-checked');
       $(this).parents('.product-price__panel').addClass('is-checked');
   });
+  $("[data-lazy]").each(function(){
+    var imgSrc = $(this).attr("data-lazy");
+    $(this).attr("src", imgSrc);
+  });
 })(jQuery);
