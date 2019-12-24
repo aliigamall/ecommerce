@@ -607,7 +607,8 @@
           display: block;
           margin: auto;
           @include mq('lg'){
-            max-width: 100px;  
+            max-width: 80px;  
+            max-height: 70px;
           }
         }
       }
@@ -699,6 +700,7 @@
       // width: 20%;
       white-space: normal;
       min-width: 190px;
+      font-size: 0.9em;
        &:first-child{
         width: 20%;
          text-align: left;
