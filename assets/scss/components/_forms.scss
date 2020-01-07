@@ -586,8 +586,10 @@ $color-black-54: rgba(#000, .54);
   svg{
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 15px;
     fill: rgba(0,0,0,.54);
+    width: 18px;
+    height: 18px;
   }
   .form-control{
     padding-left: 50px;
