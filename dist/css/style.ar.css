@@ -17497,7 +17497,9 @@ a:focus {
   flex: 0 0 50%;
   max-width: 50%;
   width: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 1px solid #f4f4f4;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 @media screen and (min-width: 992px) {
@@ -20860,12 +20862,7 @@ tbody .product-col {
   padding: 10px;
   -webkit-box-shadow: 0px 6px 5px 1px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 6px 5px 1px rgba(0, 0, 0, 0.12);
-}
-
-@media screen and (max-width: 991px) {
-  .widget-dashboard .list {
-    border-top: 1px solid #e2e2e2;
-  }
+  border-top: 1px solid #e2e2e2;
 }
 
 .widget-dashboard .list li:hover a, .widget-dashboard .list li.active a {

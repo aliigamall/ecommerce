@@ -888,8 +888,6 @@
               ratedFill: "#eb2429",
               
           }).on("rateyo.set", function (e, data) {
- 
-            alert("The rating is set to " + data.rating + "!");
         });;
       });
       }
