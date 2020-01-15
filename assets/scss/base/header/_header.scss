@@ -408,18 +408,21 @@
   .dropdown-toggle {
     display: block;
     position: relative;
-    padding: .6rem 0.8rem;
+    // padding: .6rem 0.8rem;
     border: 1px solid transparent;
     border-radius: .2rem;
     background-color: transparent;
-    box-shadow: 0 7px 8px rgba(0, 0, 0, .05);
-
+    // box-shadow: 0 7px 8px rgba(0, 0, 0, .05);
+    .icon{
+      color: #333;
+      font-size: 1.6em;
+    }
     .cart-count {
       display: -ms-flexbox;
       display: flex;
       position: absolute;
       top: .5rem;
-      right: 3.4rem;
+      right: 100%;
       -ms-flex-align: center;
       align-items: center;
       -ms-flex-pack: center;
@@ -434,17 +437,18 @@
       font-weight: 600;
       line-height: 1;
       box-shadow: 0 7px 8px rgba(0, 0, 0, .05);
+      transform: translate(50%, -5px);
     }
 
-    &::before {
-      display: inline-block;
-      margin: 2px 0 0;
-      color: #000;
-      font-family: 'porto';
-      font-size: 2.5rem;
-      line-height: 1;
-      content: '\e87f';
-    }
+    // &::before {
+    //   display: inline-block;
+    //   margin: 2px 0 0;
+    //   color: #000;
+    //   font-family: 'porto';
+    //   font-size: 2.5rem;
+    //   line-height: 1;
+    //   content: '\e87f';
+    // }
 
     &::after {
       display: none;
@@ -533,6 +537,8 @@
     font-size: 1.3rem;
     font-weight: 600;
     text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .btn-remove {
@@ -1178,16 +1184,19 @@
 }
 
 .header__login{
-  @include mq('lg', 'max'){
-    display: none;
+  @include mq('lg'){
+    padding: 0 20px;
   }
   .btn{
-    padding: 0 20px;
+    padding: 0;
     min-width: 10px;
   }
   svg{
     width: 24px;
     height: 24px;
+    @include mq('lg', 'max'){
+      display: none;
+    }
   }
   > span{
     cursor: pointer;
@@ -1199,6 +1208,9 @@
     visibility: hidden;
     transform: translate(0, 5px);
     transition: all .3s ease-in-out;
+    @include mq('lg', 'max'){
+      display: none;
+    }
   }
   .dropdown-item{
     font-size: 14px;

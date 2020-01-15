@@ -342,15 +342,25 @@ $menu-item-height: 48px !default;
 
 .megamenu__group{
   align-items: center;
+  .col-6:first-child{
+    height: 145px;
+  }
   img {
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     margin: auto;
   }
 }
 .megamenu__group--equal-height{
   align-items: flex-start;
-  img{
+  .col-6:first-child{
+    height: 220px;
+  }
+  img {
+    width: 100%;
     height: 100%;
+    object-fit: contain;
   }
 }
 .menu > .megamenu-container--dark:hover {

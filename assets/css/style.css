@@ -7540,12 +7540,14 @@ a:focus {
 .cart-dropdown .dropdown-toggle {
   display: block;
   position: relative;
-  padding: .6rem 0.8rem;
   border: 1px solid transparent;
   border-radius: .2rem;
   background-color: transparent;
-  -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-dropdown .dropdown-toggle .icon {
+  color: #333;
+  font-size: 1.6em;
 }
 
 .cart-dropdown .dropdown-toggle .cart-count {
@@ -7554,7 +7556,7 @@ a:focus {
   display: flex;
   position: absolute;
   top: .5rem;
-  right: 3.4rem;
+  right: 100%;
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
@@ -7572,16 +7574,8 @@ a:focus {
   line-height: 1;
   -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.05);
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.05);
-}
-
-.cart-dropdown .dropdown-toggle::before {
-  display: inline-block;
-  margin: 2px 0 0;
-  color: #000;
-  font-family: 'porto';
-  font-size: 2.5rem;
-  line-height: 1;
-  content: '\e87f';
+  -webkit-transform: translate(50%, -5px);
+  transform: translate(50%, -5px);
 }
 
 .cart-dropdown .dropdown-toggle::after {
@@ -7664,6 +7658,8 @@ a:focus {
   font-size: 1.3rem;
   font-weight: 600;
   text-align: left;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .cart-dropdown .btn-remove {
@@ -8271,20 +8267,26 @@ a:focus {
   fill: #EB1F27;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 992px) {
   .header__login {
-    display: none;
+    padding: 0 20px;
   }
 }
 
 .header__login .btn {
-  padding: 0 20px;
+  padding: 0;
   min-width: 10px;
 }
 
 .header__login svg {
   width: 24px;
   height: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .header__login svg {
+    display: none;
+  }
 }
 
 .header__login > span {
@@ -8300,6 +8302,12 @@ a:focus {
   transform: translate(0, 5px);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 991px) {
+  .header__login .dropdown-menu {
+    display: none;
+  }
 }
 
 .header__login .dropdown-item {
@@ -8791,8 +8799,15 @@ a:focus {
   align-items: center;
 }
 
+.megamenu__group .col-6:first-child {
+  height: 145px;
+}
+
 .megamenu__group img {
-  width: 80%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
   margin: auto;
 }
 
@@ -8802,8 +8817,15 @@ a:focus {
   align-items: flex-start;
 }
 
+.megamenu__group--equal-height .col-6:first-child {
+  height: 220px;
+}
+
 .megamenu__group--equal-height img {
+  width: 100%;
   height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .menu > .megamenu-container--dark:hover > a {
@@ -10376,7 +10398,7 @@ button.swiper-pagination-bullet {
 }
 
 .product-grid .product-details {
-  height: 260px;
+  height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15399,7 +15421,7 @@ a:focus {
   background-color: #fff;
   min-width: 150px;
   text-align: center;
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 @media screen and (min-width: 992px) {
@@ -15907,7 +15929,12 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 270px;
+}
+
+@media screen and (min-width: 992px) {
+  .banners-group .banner {
+    height: 270px;
+  }
 }
 
 .banners-group .banner img {

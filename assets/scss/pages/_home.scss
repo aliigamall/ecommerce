@@ -277,7 +277,9 @@
   .banner {
     margin-bottom: 20px;
     display: flex;
-    height: 270px;
+    @include mq('lg'){
+      height: 270px;
+    }
     img{
       width: 100%;
       height: 100%;
