@@ -1029,7 +1029,7 @@
   .header-search {
     .header-search-wrapper {
       position: absolute;
-      top: 100%;
+      top: 50px;
       right: -80px;
       width: 450px;
       margin-top: .3rem;
@@ -1187,6 +1187,11 @@
   @include mq('lg'){
     padding: 0 20px;
   }
+  small{
+    @include mq('lg', 'max'){
+      font-size: 10px;
+    }
+  }
   .btn{
     padding: 0;
     min-width: 10px;
@@ -1208,9 +1213,9 @@
     visibility: hidden;
     transform: translate(0, 5px);
     transition: all .3s ease-in-out;
-    @include mq('lg', 'max'){
-      display: none;
-    }
+    // @include mq('lg', 'max'){
+    //   display: none;
+    // }
   }
   .dropdown-item{
     font-size: 14px;

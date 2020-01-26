@@ -8159,7 +8159,7 @@ a:focus {
 @media screen and (max-width: 767px) {
   .header-search .header-search-wrapper {
     position: absolute;
-    top: 100%;
+    top: 50px;
     left: -80px;
     width: 450px;
     margin-top: .3rem;
@@ -8294,6 +8294,12 @@ a:focus {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .header__login small {
+    font-size: 10px;
+  }
+}
+
 .header__login .btn {
   padding: 0;
   min-width: 10px;
@@ -8323,12 +8329,6 @@ a:focus {
   transform: translate(0, 5px);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-}
-
-@media screen and (max-width: 991px) {
-  .header__login .dropdown-menu {
-    display: none;
-  }
 }
 
 .header__login .dropdown-item {
